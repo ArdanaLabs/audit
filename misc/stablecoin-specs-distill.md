@@ -6,6 +6,8 @@ As of 09-12
 
 # endpoint-spec.md [original](https://github.com/ArdanaLabs/ardana-dollar/blob/main/utxo-design.md)
 
+_Note: [this](https://github.com/mlabs-haskell/gov/blob/master/gov-docs.md) document is a supplement for Ben's/Mlab's thinking about governance._
+
 ### Distinctions from MakerDAO
 In general Ardana-Dollar is modelled on systems in MakerDAO (see [whitepaper](https://makerdao.com/whitepaper/White%20Paper%20-The%20Maker%20Protocol_%20MakerDAO%E2%80%99s%20Multi-Collateral%20Dai%20(MCD)%20System-FINAL-%20021720.pdf)), However, unlike MakerDAO:
 - There will be a fixed number of DANA tokens (governance tokens) minted for all time
