@@ -13,7 +13,8 @@ A flash loan, in ethereum, is a **multi-step transaction** that begins with an u
 According to finematics, the [three main investor opportunities discovered in ethereum upon the introduction of flash loans](https://youtu.be/mCJUhnXQ76s?t=371) are 
 1. Collateral swap: Suppose you take out a collateralized loan. You can swap the collateral asset in a several-step flash loan by repaying the loan in the second step, swapping your returned collateral for a different asset in the third step, taking out a new loan with that new asset you got in the swap to in the fourth step repay the flash loan. 
 2. Arbitrage: suppose there's a DAI-USDC pool in one DeX and a DAI-USDC pool in another. If you discover a price discrepancy between them, you can magnify your arbitrage profits by leveraging a flash loan. Here, the slippage question requires attention, especially if your `order size / liquidity available` ratio is high. You also have to worry about gas fees and frontrunning. 
-3. Self liquidation: consider the liquidation condition in the MakerDAO protocol, in which a pool that is considered too risky is liquidated in auctions. Suppose your assets are nearing that threshold and are about to be liquidated by the protocol. TODO: flesh out.
+3. Self liquidation: consider the liquidation condition in the MakerDAO protocol, in which a pool that is considered too risky is liquidated in auctions. Suppose your assets are nearing that threshold and are about to be liquidated by the protocol. 
+> You can take a flash loan for the amount of DAI that you owe, repay your DAI loan and withdraw your ETH, swap enough ETH to DAI in order to repay the flash loan + fees, keep the rest of your ETH (- [source](https://finematics.com/flash-loans-explained/))
 
 More use cases may be discovered. 
 
@@ -44,9 +45,11 @@ Peckshield did not publically cover this one. I'm sparse on details.
 
 ### [news](https://news.bitcoin.com/defi-protocol-harvest-finance-hacked-for-24-million-attacker-returns-2-5-million/)
 
-## Alpha Homora - February 2021 - losses `$37.5M`
+## Homora-Cream - February 2021 - losses `$37.5M`
 
-This attack also effected Cream. 
+[Alpha homora](homora.alphafinance.io) is a yield farming service in "the alpha ecosystem". 
+
+Cream was in some sense more of the victim here, but Alpha Homora was the site of the vulnerability.
 
 I can't find a lot of details.
 
@@ -56,7 +59,7 @@ I can't find a lot of details.
 
 (an estimate that `>$200M` of value was destroyed, because the price dipped 95%).
 
-
+Struggling to find an adequate breakdown. 
 
 ### [news](https://www.coindesk.com/markets/2021/05/20/flash-loan-attack-causes-defi-token-bunny-to-crash-over-95/) - [source two](https://medium.com/amber-group/bsc-flash-loan-attack-pancakebunny-3361b6d814fd)
 
@@ -115,7 +118,7 @@ Isaac suggested we could **block price manipulation by disallowing mid-transacti
 
 Isaac suggested we could **block price manipulation by disallowing mid-transaction information from updating prices**. Let's talk about this on call, keen to hear if anyone thinks this won't work. 
 
-## Alpha Homora-like
+## Homora-Cream-like
 
 ## Pancake Bunny-like
 
@@ -134,3 +137,5 @@ I think the following types of risks are distinct
 1. Risks to Dana holders and the Ardana core stakeholders
 2. Risks to our neighbors in the ecosystem that we want to protect them from
 3. Risks that everyone should be empowered to take, different use of the word "risk" to mean financial/gambling risk. 
+
+At the mechanism design level, it's possible that Isaac's idea will be sufficient. However, implementation mistakes could still be very costly. 
