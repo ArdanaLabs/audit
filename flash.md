@@ -67,9 +67,13 @@ I can't find a lot of details.
 This attack inflated a balance of the BOG token. 
 
 > Step 1: Take nine flash-swaps and add liquidity into the WBNB+BOG pool. Each flash-swap leads to 47,770 BOG and the entire process consumes 88,159.43 WBNB with 83,440.57 LP token minted.
+
 > Step 2: Stake the minted 83,440.57 WBNB+BOG LP tokens into the BOG token contract for profit sharing.
+
 > Step 3: Perform 434 self-transfers in the total transfer amount of 18.74M BOG, resulting in an increased balance of 151K BOG.
+
 > Step 4: Sell the extra BOG to WBNB, and then to anyETH.
+
 > Step 5: Remove the added liquidity in Step 1 and complete the flash-swaps.
 
 ### [peckshield medium](https://peckshield.medium.com/bogged-finance-incident-root-cause-analysis-718d53faad5c)
@@ -79,7 +83,9 @@ This attack inflated a balance of the BOG token.
 AMP is a ERC77-based ERC1820 token that, upon it's introduction, had a _reentrancy_ bug. 
 
 > “The hack is made possible due to a reentrancy bug introduced by \$AMP, which is an ERC777-like token and exploited to re-borrow assets during its transfer before updating the first borrow.”
+
 > This was flashloan exploit where hacker took a flashloan in ETH and used that loan to borrow AMP tokens. PeckShield explained the attack as:
+
 > “Specifically, in the example tx, the hacker makes a flashloan of 500 ETH and deposit the funds as collateral. Then the hacker borrows 19M \$AMP and makes use of the reentrancy bug to re-borrow 355 ETHs inside \$AMP token transfer (). Then the hacker self-liquidates the borrow.”
 
 ### [news](https://crypto-economy.com/defi-lender-cream-finance-suffers-a-25m-flash-loan-exploit/)
