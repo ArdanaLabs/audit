@@ -1,6 +1,10 @@
 # Ardana Audit
 
-We can migrate some of the drafting process to gdocs if comments and suggestions functionality would add value over gh. Otherwise, I think issues and pull request comment threads could be nice-- open a PR for perhaps a nearly trivial change and we can proceed to discuss in the comments there. - Q 09-12
+The audit will be a document published at launch and signed by Platonic.Systems. 
+
+It is not intended to convey our 200% confidence in the system and implementation, rather it is intended to convey that we did due diligence with limited time. 
+
+Toward the very end, a writing expert will take a pass to make sure we're adequately conveying the varying confidence levels throughout the document. 
 
 ## Notes on the overall audit philosophy
 
