@@ -1,4 +1,19 @@
-# On flash loans
+# Flash loans
+
+# Executive summary
+
+Ethereum offers flash loans because they have **multi-step atomic transactions**. Cardano does not have these. So in spite of `Aada`'s claims, we are not expecting flash loans to enter the Cardano ecosystem at this time. There may be lessons from the attacks in the reports, but they are not entirely straightforward. The question is: is there anything _unique_ introduced by the flash loan mechanism?:w
+The auditing research opportunity here is not a huge priority.
+
+## Takeaway that definitely goes into the audit
+Project Ardana will be monitoring the Cardano ecosystem's evolution **very** closely to check if they're thinking about introducing multistep atomic transactions. 
+
+#### In the event of this happening, the following mitigation strategy sketches will become rather urgent. 
+- Onchain code only allow interop from one platform and users, not arbitrary platform
+- Lending products ought to require to collateralize in one whole transaction ahead of time before.
+- Block price manipulation by disallowing mid-transaction information from updating prices
+
+# Long report - [Attacks](#Attacks) - [Mitigation](#Mitigation) - [Summary](#Summary)
 
 Ardana does not offer flash loans directly. 
 
