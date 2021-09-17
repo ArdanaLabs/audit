@@ -1,5 +1,5 @@
 ---
-name: The Pile of Quinn's Attention
+name: The Pile for Quinn's Attention to Consume
 about: Report a threatmodel, attack vector, exploit, vulnerability, or broadly any consideration you think is relevant to the audit.
 title: [pile]
 ---
