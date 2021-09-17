@@ -37,7 +37,7 @@ The flashloan borrow is straightforward, the hoard step is a collateralized loan
 
 ## Harvest - October 2020 - losses `$24M`
 
-Harvest is a yield aggregator.
+Harvest is a [yield aggregator](https://docs.google.com/document/d/1dgKUET3Ngo-B_LPDXuqSJvAewe7IIKAxiWMSdVXD9q8/edit?usp=sharing).
 
 > Harvest Finance revealed that the hacker “manipulated prices on one money lego (curve y pool) to drain another money lego [farm USDT (fUSDT), farm USDC (fUSDC)], many times. The attacker then converted the funds to renBTC and exited to bitcoin.”
 
@@ -47,7 +47,7 @@ Peckshield did not publically cover this one. I'm sparse on details.
 
 ## Homora-Cream - February 2021 - losses `$37.5M`
 
-[Alpha homora](homora.alphafinance.io) is a yield farming service in "the alpha ecosystem". 
+[Alpha homora](homora.alphafinance.io) is a [yield farming](https://docs.google.com/document/d/1dgKUET3Ngo-B_LPDXuqSJvAewe7IIKAxiWMSdVXD9q8/edit?usp=sharing) service in "the alpha ecosystem". 
 
 Cream was in some sense more of the victim here, but Alpha Homora was the site of the vulnerability.
 
