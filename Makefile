@@ -17,7 +17,7 @@ typeset:
 	  --template     template.tex   \
 	  --out          audit.pdf      \
 	  --pdf-engine   xelatex        \
-	  --bibliography src/biblio.bib --biblatex    \
+	  --bibliography src/biblio.bib \
 	  --csl acm-sig-proceedings.csl \
 	  $(FILES)
 # end

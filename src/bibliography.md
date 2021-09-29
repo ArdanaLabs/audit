@@ -1,5 +1,2 @@
----
-bibliography: ./biblio.bib
-nocite: '@*'
----
-# Bibliography #
+\chapter{Bibliography}
+

@@ -1,3 +1,5 @@
+\chapter{Considerations}
+
 # On datastream integrity
 
 There are a couple places in the Ardana ecosystem that suggest **interaction with live datastreams**. A variety of software concerns such as API integration practices or keeping a stream open are ignored in the current document.
