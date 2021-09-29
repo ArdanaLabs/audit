@@ -6,6 +6,23 @@ It is not intended to convey our 200% confidence in the system and implementatio
 
 Toward the very end, a writing expert will take a pass to make sure we're adequately conveying the varying confidence levels throughout the document. 
 
+## Repo usage
+
+Please file ideas- threat models, attack vectors, or overall just considerations for the audit -as issues. Issue templates self-explanatory.
+
+## To render PDF
+
+A job renders it and pushes it to github, so just look at that one. 
+
+But if you want to render it locally, 
+``` sh
+apt-get install pandoc pandoc-citeproc texlive-xetex
+make
+```
+
+### When a new `.md` file is added in `src`
+One must add it's path in `index.txt`. 
+
 ## Notes on the overall audit philosophy
 
 ### On the approach
