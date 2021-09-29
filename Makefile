@@ -19,7 +19,7 @@ typeset:
 	  --pdf-engine   xelatex        \
 	  --bibliography biblio.bib     \
 	  --csl acm-sig-proceedings.csl \
-	  $(FILES)                      \
 	  --citeproc                    \
-	  --biblatex
+      --biblatex                    \
+	  $(FILES)
 # end
