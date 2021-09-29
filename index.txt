@@ -1,3 +1,5 @@
 src/preamble.md
 src/considerations/datastream.md
 src/attacks/vampire.md
+src/attacks/flash.md
+src/bibliography.md

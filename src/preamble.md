@@ -16,5 +16,4 @@ The problem with both approaches is the distance between _pointing out_ properti
 
 * The audit is **as much as was possible to do before launch time, not exhaustive**.
 
-
 We should also clearly define what we think a secure DeX even is.

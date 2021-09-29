@@ -24,4 +24,4 @@ jobs:
           uses: EndBug/add-and-commit@v7
           with:
             add: audit.pdf
-            message: 'Freshly rendered audit.pdf at ${{ env.now }}'
+            message: 'Freshly rendered audit.pdf at ${{ env.NOW }}'
