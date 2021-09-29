@@ -1,3 +1,3 @@
 src/preamble.md
-src/datastream.md
-src/vampire.md
+src/considerations/datastream.md
+src/attacks/vampire.md

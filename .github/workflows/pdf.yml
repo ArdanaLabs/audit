@@ -14,10 +14,10 @@ jobs:
           run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
         - name: Checkout
           uses: actions/checkout@v2
-        - name: Install depedendencies
+        - name: Install dependencies
           run: |
-               apt-get update
-               apt-get install pandoc pandoc-citeproc texlive-xetex
+               sudo apt-get update -y
+               sudo apt-get install pandoc pandoc-citeproc texlive-xetex -y
         - name: Render PDF with Makefile
           run: make
         - name: Push PDF
