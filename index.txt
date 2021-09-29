@@ -3,3 +3,4 @@ src/considerations/datastream.md
 src/considerations/scalartypes.md
 src/attacks/vampire.md
 src/attacks/flash.md
+src/bibliography.md

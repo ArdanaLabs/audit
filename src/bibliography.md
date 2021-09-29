@@ -1,1 +1,4 @@
+---
+bibliography: biblio.bib
+---
 # Bibliography #
