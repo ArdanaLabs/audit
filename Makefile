@@ -1,6 +1,8 @@
 ##
 # Pandoc render
 #
+# Courtesy of https://github.com/lauritzsh/pandoc-markdown-template/tree/master/report-bib
+#
 # @file
 # @version 0.1
 
