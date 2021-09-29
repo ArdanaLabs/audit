@@ -1,6 +1,6 @@
 src/preamble.md
 src/considerations/datastream.md
 src/considerations/scalartypes.md
-src/attacksvampire.md
+src/attacks/vampire.md
 src/attacks/flash.md
 src/bibliography.md
