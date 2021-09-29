@@ -23,7 +23,7 @@ make
 ### When a new `.md` file is added in `src`
 One must add it's path in `index.txt`. 
 
-## Notes on the overall audit philosophy
+## Notes on the overall audit philosophy (_mostly CC'd to `src/preamble.md`_)
 
 ### On the approach
 There are a number of ways to go about this. 

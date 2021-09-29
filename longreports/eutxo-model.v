@@ -48,6 +48,27 @@ Definition Tick := nat.
 Definition Address := nat.
 Definition Data := Type.
 Definition Datahash (data : Data) := data -> nat.
-Definition
 
+Definition TxId := nat.
+Definition txId {A B : Type} := (A -> B) -> TxId.
+Definition scriptAddr :
 Record InputInfo
+Definition scriptAddr :
+
+Record Output : Type :=
+  mkOutput
+    {
+      value : Quantity;
+      addr : Address;
+      datumHash : Datahash
+    }.
+
+
+Record Input : Type :=
+  mkInput
+    {
+      outputRef : OutputRef;
+      validator : Script;
+      datum : Data;
+      redeemer : Data
+    }.
