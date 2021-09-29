@@ -1,4 +1,5 @@
 ---
-bibliography: biblio.bib
+bibliography: ./biblio.bib
+nocite: '@*'
 ---
 # Bibliography #
