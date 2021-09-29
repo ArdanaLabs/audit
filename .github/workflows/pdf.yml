@@ -17,7 +17,7 @@ jobs:
         - name: Install dependencies
           run: |
                sudo apt-get update -y
-               sudo apt-get install pandoc pandoc-citeproc texlive-xetex -y
+               sudo apt-get install pandoc pandoc-citeproc texlive texlive-xetex texlive-bibtex-extra -y
         - name: Render PDF with Makefile
           run: make
         - name: Push PDF

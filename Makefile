@@ -15,10 +15,11 @@ typeset:
 	  --from         markdown       \
 	  --to           latex          \
 	  --template     template.tex   \
-	  --out          audit.pdf 		\
+	  --out          audit.pdf      \
 	  --pdf-engine   xelatex        \
 	  --bibliography biblio.bib     \
 	  --csl acm-sig-proceedings.csl \
-	  $(FILES)
-
+	  $(FILES)                      \
+	  --citeproc                    \
+	  --biblatex \
 # end

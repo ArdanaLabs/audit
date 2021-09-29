@@ -29,14 +29,13 @@
             urlcolor=blue,
             linkcolor=black]{hyperref}
 \usepackage{datetime}
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\bibliography{biblio}
+% \addbibresource{./biblio.bib}
 
-% Polyglossia settings
-\setmainlanguage{english} % or danish
+\setmainlanguage{english}
 \addto\captionsenglish{%
   \renewcommand{\contentsname}{Table of Contents}
-}
-\addto\captionsdanish{%
-  \renewcommand{\contentsname}{Indholdsfortegnelse}
 }
 
 
@@ -90,5 +89,7 @@ $endif$
 \tableofcontents
 
 $body$
+
+\printbibliography
 
 \end{document}
