@@ -1,0 +1,23 @@
+name: PDF
+
+on:
+    push:
+        branches:
+        - main
+
+jobs:
+    render-pdf-push:
+        name: Render & Push PDF
+        runs-on: ubuntu-20.04
+        steps:
+        - name: Set current date as env variable
+          run: echo "NOW::$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+        - name: Checkout
+          uses: actions/checkout
+        - name: Render PDF with Makefile
+          run: make
+        - name: Push PDF
+          uses: EndBug/add-and-commit@v7
+          with:
+            add: audit.pdf
+            message: 'Freshly rendered audit.pdf at $NOW'
