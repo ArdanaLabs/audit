@@ -2,7 +2,7 @@
 # Pandoc render
 #
 # Courtesy of https://github.com/lauritzsh/pandoc-markdown-template/tree/master/report-bib
-#
+# Style sheets https://github.com/citation-style-language/styles/
 # @file
 # @version 0.1
 
@@ -18,7 +18,7 @@ typeset:
 	  --out          audit.pdf 		\
 	  --pdf-engine   xelatex        \
 	  --bibliography biblio.bib     \
-	  --csl style.csl               \
+	  --csl acm-sig-proceedings.csl \
 	  $(FILES)
 
 # end
