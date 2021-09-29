@@ -21,5 +21,5 @@ typeset:
 	  --csl acm-sig-proceedings.csl \
 	  $(FILES)                      \
 	  --citeproc                    \
-	  --biblatex \
+	  --biblatex
 # end
