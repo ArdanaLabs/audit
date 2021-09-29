@@ -54,7 +54,7 @@ $highlighting-macros$
 
 
 % Make links footnotes instead of hotlinks
-\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+% \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
 
 
 % Avoid problems with \sout in headers with hyperref:
@@ -85,8 +85,8 @@ $endif$
 \input{cover}
 
 % Chapter: 0, section: 1, subsection: 2 etc
-\setcounter{secnumdepth}{1}
-\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{2}
 \tableofcontents
 
 $body$
