@@ -23,6 +23,8 @@ make
 ### When a new `.md` file is added in `src`
 One must add it's path in `index.txt`. 
 
+**Please make sure** that the first file per subdirectory listed in `index.txt` has a `\chapter{ChapterName}` at the top. The order listed in `index.txt` is the part that matters here. 
+
 ## Notes on the overall audit philosophy (_mostly CC'd to `src/preamble.md`_)
 
 ### On the approach

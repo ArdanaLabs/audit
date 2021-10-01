@@ -1,13 +1,13 @@
 \chapter{Preamble}
 
-## On the approach
-There are a number of ways to go about this. 
+The audit is a preliminary effort to compensate for the fact that proper formal verification before launch is infeasible. 
 
-The first way we talked about was to provide a list of desirable properties and find ways to verify or validate them. This is a sort of _positive approach_, it talks about things we want. 
-
-Another angle is for me to write up my understanding of all the ecosystem functionalities one at a time and point out some threatmodels along the way. This is a sort of _negative approach_, it talks about things we don't want.
-
-The problem with both approaches is the distance between _pointing out_ properties and _implementing/defending against them_ depending on if it's the positive or negative case. Also keep in mind that in some sense the audit is a "warmup" for a post-launch formal verification. 
+\begin{definition}
+An $\textbf{audit}$ is a document provided to the community to guide them in taking informed risk.
+\end{definition}
+\begin{definition}
+A $\textbf{community}$ consists of liquidity providers, investors, swappers, arbitrageurs, governance token holders, and neighboring members/projects of the ecosystem.
+\end{definition}
 
 ## Desiderata
 * **The community is the audience. The community is the customer.** 
@@ -16,5 +16,14 @@ The problem with both approaches is the distance between _pointing out_ properti
 
 * The audit is **as much as was possible to do before launch time, not exhaustive**.
 
-We should also clearly define what we think a secure DeX even is.
+# Considerations
 
+In this chapter we look at broad concepts and decisions and provide context into the way the team is thinking about them. This section should add indirect value to the process of taking informed risks.
+
+# Attacks
+
+In this chapter we profile threat models, attack vectors, vulnerabilities; mostly on the economic and mechanism design levels, but occasionally on the software implementation level. 
+
+This audit will take on a bit of a code-is-law opinion; many things which are called "attacks" are in fact people using mechanisms as designed. However, it is still the responsibilty of a platform (such as a DeX) to help the community make informed decisions about risk, even when the risk concerns unforeseen behaviors of a protocol or implementation. 
+
+Philosophically, be wary of morally charged language in the overall literature. It often implies that an attack is carried out by a summary enemy of the entire ecosystem, that the ecosystem is victimized, when clearer thinking shows that a small team or platform was the sole victim. 
