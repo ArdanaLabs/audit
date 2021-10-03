@@ -21,7 +21,7 @@ Consult a selection of stories about vampire attacks.
 
 ### Major takeaways
 
-* Lack of vampire attack stories in the Cardano ecosystem is, according to my analysis, a simple function of Cardano 
+* Lack of vampire attack stories in the Cardano ecosystem is, according to my analysis, not a by-construction property of Cardano. I.e. it's a matter of time. 
 
 * Forking a codebase is often used as evidence in favor of the accusation that a given $\Pi'$ conducted a vampire attack, though forking is not an intrinsic property of the attack. 
 

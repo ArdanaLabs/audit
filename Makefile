@@ -19,5 +19,5 @@ typeset:
 	  --pdf-engine   xelatex        \
 	  --bibliography src/biblio.bib \
 	  --csl acm-sig-proceedings.csl \
-	  $(FILES)
+	  $(FILES) -V block-headings
 # end
