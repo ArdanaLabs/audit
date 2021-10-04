@@ -21,7 +21,10 @@ jobs:
       run: nix-build
 
     - name: Copy file from symlink to real file
-      run: cp result/audit.pdf audit.pdf
+      run: |
+        rm -f audit.pdf
+        cp result/audit.pdf audit.pdf
+        rm -r result
     - name: Push PDF
       uses: EndBug/add-and-commit@v7
       with:
