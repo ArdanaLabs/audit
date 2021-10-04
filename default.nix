@@ -10,7 +10,6 @@ let deps = [
       )
       haskellPackages.pandoc
     ];
-    FONTCONFIG_PATH=/etc/fonts;
 in
   stdenv.mkDerivation {
     name = "render_audit";
@@ -19,12 +18,12 @@ in
     buildPhase = ''pandoc \
       --from markdown \
       --to latex \
-      --template template.tex \
+      --template src/template.tex \
       --out audit.pdf \
       --bibliography src/biblio.bib \
       --pdf-engine xelatex \
-      --csl acm-sig-proceedigns.csl \
-      $(cat index.txt)
+      --csl src/acm-sig-proceedigns.csl \
+      $(cat src/index.txt)
     '';
     installPhase = ''
       mkdir -p $out
