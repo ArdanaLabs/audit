@@ -1,3 +1,4 @@
+# Legacy - see nixpdf.yml for actual workflow.
 name: PDF
 
 on:

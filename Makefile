@@ -1,5 +1,6 @@
 ##
 # Pandoc render
+# # LEGACY: use `nix-build` instead
 #
 # Courtesy of https://github.com/lauritzsh/pandoc-markdown-template/tree/master/report-bib
 # Style sheets https://github.com/citation-style-language/styles/
