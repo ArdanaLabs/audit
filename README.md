@@ -4,7 +4,7 @@ The audit will be a document published at launch and signed by Platonic.Systems.
 
 It is not intended to convey our 200% confidence in the system and implementation, rather it is intended to convey that we did due diligence with limited time. 
 
-Toward the very end, a writing expert will take a pass to make sure we're adequately conveying the varying confidence levels throughout the document. 
+Toward the very end, our copywriter will take a pass to make sure we're adequately conveying the varying confidence levels throughout the document. 
 
 ## Repo usage
 
@@ -16,8 +16,7 @@ A job renders it and pushes it to github, so just look at that one.
 
 But if you want to render it locally, 
 ``` sh
-apt-get install pandoc pandoc-citeproc texlive-xetex
-make
+nix-build
 ```
 
 ### When a new `.md` file is added in `src`
