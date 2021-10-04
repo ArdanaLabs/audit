@@ -1,0 +1,29 @@
+# This can be run manually like so:
+#
+#     gh workflow run nixpdf.yml --ref <git_branch_name>
+#
+name: PDF with Nix
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+jobs:
+  render-pdf-push:
+    name: Render & Push PDF with Nix
+    runs-on: self-hosted
+    steps:
+    - name: Set current date as env variable
+      run: echo "NOW=$(date +'%Y-%m-%dT%H:%M%S')" >> $GITHUB_ENV
+    - name: Checkout repository to $GITHUB_WORKSPACE
+      uses: actions/checkout@v2.3.4
+
+    - name: Nix build
+      run: nix-build
+
+    - name: Copy file from symlink to real file
+      run: cp result/audit.pdf audit.pdf
+    - name: Push PDF
+      uses: EndBug/add-and-commit@v7
+      with:
+        add: audit.pdf
+        message: 'Freshly rendered audit.pdf at ${{ env.NOW }}'
