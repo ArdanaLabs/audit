@@ -10,7 +10,7 @@ on:
 jobs:
   render-pdf-push:
     name: Render & Push PDF with Nix
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     steps:
     - name: Set current date as env variable
       run: echo "NOW=$(date +'%Y-%m-%dT%H:%M%S')" >> $GITHUB_ENV
