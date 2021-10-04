@@ -20,10 +20,10 @@ jobs:
     - name: Nix build
       run: nix-build
 
+    - name: Copy file from symlink to real file
+      run: cp result/audit.pdf audit.pdf
     - name: Push PDF
-      uses: actions-x/commit@v2
+      uses: EndBug/add-and-commit@v7
       with:
-        files: result/audit.pdf
-        message: 'Freshly rendered audit.pdf at $${{ env.NOW }}'
-        name: GitHub Actions Autocommitter
-        branch: ${GITHUB_REF##*/}
+        add: audit.pdf
+        message: 'Freshly rendered audit.pdf at ${{ env.NOW }}'
