@@ -1,6 +1,6 @@
 # This can be run manually like so:
 #
-#     gh workflow run ci.yml --ref <git_branch_name>
+#     gh workflow run nixpdf.yml --ref <git_branch_name>
 #
 name: PDF with Nix
 on:
@@ -21,7 +21,9 @@ jobs:
       run: nix-build
 
     - name: Push PDF
-      uses: EndBug/add-and-commit@v7
+      uses: actions-x/commit@v2
       with:
-        add: result/audit.pdf
+        files: result/audit.pdf
         message: 'Freshly rendered audit.pdf at $${{ env.NOW }}'
+        name: GitHub Actions Autocommitter
+        branch: ${GITHUB_REF##*/}
