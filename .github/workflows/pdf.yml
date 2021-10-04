@@ -3,7 +3,7 @@ name: PDF
 on:
     push:
         branches:
-        - main
+        - main-DISABLE
 
 jobs:
     render-pdf-push:
