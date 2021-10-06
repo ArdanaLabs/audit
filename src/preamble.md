@@ -4,8 +4,6 @@ The audit is a preliminary effort to compensate for the fact that proper formal 
 
 An audit means many things. Let's be precise about what we mean by audit in this document.
 
-check it out \autocite{item1:1} ok
-
 \begin{definition}
 An $\textbf{audit}$ is a document provided to the community to guide them in taking informed risk.
 \end{definition}

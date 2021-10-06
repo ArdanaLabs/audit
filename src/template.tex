@@ -30,9 +30,11 @@
             urlcolor=blue,
             linkcolor=black]{hyperref}
 \usepackage{datetime}
-\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+% \usepackage[backend=biber,style=authoryear]{biblatex}
 % \bibliography{src/biblio}
-\addbibresource{./src/biblio.bib}
+% \addbibresource{./biblio.bib}
+% \usepackage{biber}
+
 
 \newtheorem{definition}{Definition}[section]
 
@@ -73,11 +75,13 @@ $highlighting-macros$
 $if(csl-refs)$
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
-\newenvironment{cslreferences}%
+\newenvironment{CSLReferences}%
   {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
   \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
   {\par}
 $endif$
+\newenvironment{CSLLeftMargin}
+\newenvironment{CSLRightInline}
 
 % -----------------
 %  END OF PREAMBLE
@@ -95,6 +99,6 @@ $endif$
 
 $body$
 
-\printbibliography
+% \printbibliography
 
 \end{document}
