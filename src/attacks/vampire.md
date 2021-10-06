@@ -4,7 +4,7 @@
 
 ## Definition
 
-\begin{definition}
+\begin{definition}[Vampire attack]
 Let $\Pi$ and $\Pi'$ be similar protocols, but $\Pi$ launched and attracted investors and customers earlier, and $\Pi'$ is somehow derivative of $\Pi$. Suppose $\Pi'$ competes with $\Pi$ such that $\Pi'$ makes parameter choices or other measures to become more attractive to investors or customers than $\Pi$. A $\textbf{vampire attack}$ is defined as the migration of value (liquidity or other assets) out of $\Pi$ into $\Pi'$.
 \end{definition}
 
@@ -27,7 +27,7 @@ Consult a selection of stories about vampire attacks.
 
 ## Scenario: reputational damage if we're considered $\Pi'$
 
-Are there competing DeXs that beat us to market that could accuse us of vampire attacking them?
+Are there competing DeXs that beat us to market that could accuse us of vampire attacking them? Imagine if a bunch of Curve investors pull out their liquidity, exchange it for `ADA` on Coinbase, and start playing Danaswap. Would Curve think of that like a vampire attack?
 
 ## Scenario: value siphoned out if we become $\Pi$
 

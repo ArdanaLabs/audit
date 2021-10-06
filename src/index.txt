@@ -4,4 +4,5 @@ src/considerations/rootfinding.md
 src/considerations/scalartypes.md
 src/attacks/vampire.md
 src/attacks/flash.md
+src/appendices/invariant.md
 src/bibliography.md
