@@ -27,8 +27,7 @@
 \usepackage[setpagesize=false,
             unicode=false,
             colorlinks=true,
-            urlcolor=blue,
-            linkcolor=black]{hyperref}
+            urlcolor=blue]{hyperref}
 \usepackage{datetime}
 % \usepackage[backend=biber,style=authoryear]{biblatex}
 % \bibliography{src/biblio}
@@ -39,11 +38,21 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{derivation}{Derivation}[section]
 
+\makeatletter
+\@ifpackageloaded{hyperref}%
+  {\newcommand{\mylabel}[2]% #1=name, #2 = contents
+    {\protected@write\@auxout{}{\string\newlabel{#1}{{#2}{\thepage}%
+      {\@currentlabelname}{\@currentHref}{}}}}}%
+  {\newcommand{\mylabel}[2]% #1=name, #2 = contents
+    {\protected@write\@auxout{}{\string\newlabel{#1}{{#2}{\thepage}}}}}
+\makeatother
+
+
+
 \setmainlanguage{english}
 \addto\captionsenglish{%
   \renewcommand{\contentsname}{Table of Contents}
 }
-
 
 % Required for syntax highlighting
 $highlighting-macros$

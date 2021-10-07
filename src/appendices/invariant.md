@@ -7,11 +7,11 @@ $$\chi D^{n-1} \Sigma x_i + \Pi x_i = \chi D^n + \left( \frac{D}{n} \right)^n$$
 
 When $\chi$ is a blackbox, there is very little analysis available regarding the existence and behavior of roots or the convergence of any root-finding algorithm. We will forego any gains of abstracting over leverage coefficients, and let $\chi = \frac{A (\Pi x_i) n^n}{D^n}$ before proceeding. 
 
-## Derivation of invariant polynomials
+## Derivation of \nameref{dfn:invpolyn}
 
 First we derive $I_D$, the polynomial in unknown $D$. 
 
-\begin{derivation}
+\begin{derivation}[$I_D$]\label{drvn:ID}
 $$\begin{aligned}
 \chi D^{n-1} \Sigma x_i + \Pi x_i & = \chi D^n + \left( \frac{D}{n} \right)^n \\
 \midrule \\
@@ -36,7 +36,9 @@ D^{n+1} + (A - n^{-n}) n^{2n} (\Pi x_i) D + - A n^{2n} (\Pi x_i) \Sigma x_i & = 
 
 We now have a polynomial in $x \mapsto x^{n+1} + a x + b$ form, for constants $a$ and $b$ which are functions of a balance sheet and the _amplification coefficient_ $A$. 
 
-\begin{derivation}
+Next, we start from a similar place and derive a polynomial in unknown of $B(s)_k = x_k$.
+
+\begin{derivation}[$I_k$]\label{drvn:Ik}
 $\forall k \in 1..n,$ 
 $$\begin{aligned}
 \frac{A (\Pi x_i) n^n}{D^n} D^{n-1} \Sigma x_i + \Pi x_i & = \frac{A (\Pi x_i) n^n}{D^n} D^n + \left( \frac{D}{n} \right)^n \\
@@ -54,6 +56,8 @@ x_k^2 + \left( \Sigma_{i \neq k} x_i + \frac{D}{A n^n} - D \right) x_k + \frac{-
 x_k^2 + \left( \Sigma_{i \neq k} x_i - D (1 - \frac{1}{A n^n})\right) x_k + \frac{-D^{n+1}}{A n^{2n} \Pi_{i \neq k} x_i} & = 0
 \end{aligned}$$
 \end{derivation}
+
+We now have a quadratic in $x \mapsto x^2 + a x + b$ form, for constants $a$ and $b$ which are each functions of $D$ and the other assets on the balance sheet. 
 
 ## Analysis of roots and of derivatives
 

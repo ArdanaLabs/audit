@@ -4,14 +4,14 @@ Recall the **invariant equation** from the StableSwap Whitepaper [@StableSwapWhi
 
 We define the **invariant polynomial** $n + 1$ times like so
 
-\begin{definition}[Invariant polynomials]
+\begin{definition}[Invariant polynomials]\label{dfn:invpolyn}
 $$\begin{aligned}
     I_D & := D \mapsto D^{n+1} + (A + n^{-n})n^{2n}(\Pi B(s)_i) D + - A n^{2n} (\Pi B(s)_i) \Sigma B(s)_i \\
     \forall k \in 1..n, I_k & := B(s)_k \mapsto B(s)_k^2 + \left(\Sigma_{i \neq k} B(s)_i + (\frac{1}{A n^n} - 1) D \right) x_k + \frac{-D^{n+1}}{A n^{2n}\Pi_{i \neq k} B(s)_i}
 \end{aligned}$$
 \end{definition}
 
-The derivations beginning with [@StableSwapWhitepaper] are in Appendix A. 
+The derivations beginning with [@StableSwapWhitepaper] are in Appendix A (\nameref{drvn:ID}, \nameref{drvn:Ik}). 
 
 We think the invariant equation is best represented as polynomials set to zero, depending on what you're solving for, for the following reasons
 
