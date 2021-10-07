@@ -1,7 +1,7 @@
 ---
 name: Research Task
 about: Request a paper summary, ask me to find a piece of information you need, point me to a specific event or concept in the ecosystem that you think needs to be on my radar
-title: [research]
+title: "[research] - "
 ---
 ## Description
 
