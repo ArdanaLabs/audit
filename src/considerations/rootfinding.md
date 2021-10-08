@@ -19,7 +19,7 @@ We think the invariant equation is best represented as polynomials set to zero, 
 
 2. **Trivially reason about derivatives**. Without my algebraic choices the derivatives (for Newton's method) are harder to see.
 
-3. **Shrink the arithmetic tree size**. Leaving $\chi$ in a blackbox has the advantage of the codebase being able to plug in different leverage coefficients in the future just by supplying the leverage coefficient and its derivative. However, this puts more on the stack than is necessary. I haven't done any formal benchmarking of this, but I currently believe the invariant polynomials in these forms are simpler trees and should therefore result in lower fees. 
+3. (Hypothesis): **Shrink the arithmetic tree size**. Leaving $\chi$ in a blackbox has the advantage of the codebase being able to plug in different leverage coefficients in the future just by supplying the leverage coefficient and its derivative. However, this puts more on the stack than is necessary. I haven't done any formal benchmarking of this, but I currently believe the invariant polynomials in these forms are simpler trees and should therefore result in lower fees. Note IOHK have not published nor pushed code on a cost semantics / gas model, so we might not be able to reason about this.
 
 4. **Increase our ability to reason about alternatives to Newton's method**. For example, looking at this problem from a companion matrix point of view becomes possible when we have formal polynomials. 
 
