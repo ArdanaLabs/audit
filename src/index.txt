@@ -1,5 +1,5 @@
-src/executive.md
-src/preamble.md
+src/preamble/executive.md
+src/preamble/preamble.md
 src/considerations/scalartypes.md
 src/considerations/rootfinding.md
 src/considerations/throughput.md
