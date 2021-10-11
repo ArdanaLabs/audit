@@ -4,10 +4,10 @@ The audit is a preliminary effort to compensate for the fact that proper formal 
 
 An audit means many things. Let's be precise about what we mean by audit in this document.
 
-\begin{definition}[Audit]
+\begin{definition}[Audit]\label{dfn:audit}
 An audit is a document provided to the community to guide them in taking informed risk.
 \end{definition}
-\begin{definition}[Community]
+\begin{definition}[Community]\label{dfn:community}
 A community consists of liquidity providers, investors, swappers, arbitrageurs, governance token holders, and neighboring members/projects of the ecosystem.
 \end{definition}
 

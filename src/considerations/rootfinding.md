@@ -11,7 +11,7 @@ $$\begin{aligned}
 \end{aligned}$$
 \end{definition}
 
-The derivations beginning with [@StableSwapWhitepaper] are in Appendix A (\nameref{drvn:ID}, \nameref{drvn:Ik}). 
+The derivations beginning with [@StableSwapWhitepaper] are in \nameref{apdx:inv} (\nameref{drvn:ID}, \nameref{drvn:Ik}). 
 
 We think the invariant equation is best represented as polynomials set to zero, depending on what you're solving for, for the following reasons
 
@@ -25,8 +25,10 @@ We think the invariant equation is best represented as polynomials set to zero, 
 
 ## Newton's algorithm 
 
-In Curve's implementation of StableSwap, they use Newton's algorithm for root finding [@NewtonAlg], so that's the first iteration of our codebase.
+In Curve's implementation of StableSwap, they use Newton's algorithm for root finding, so that's the first iteration of our codebase.
 
-When the derivative can be found in a neighborhood of zero, Newton's method does not enjoy convergence guarantees. 
+When the derivative can be found in a neighborhood of zero, Newton's method does not enjoy convergence guarantees [@NewtonAlg, para. 4.1]. The probability that invariant polynomial derivatives are in such a neighborhood is tiny, but nonzero, with details in \ref{apdx:inv}. 
+
+We currently solve in `DanaswapStats` and oblige onchain logic to provide an $\epsilon$-proof that the root is valid. 
 
 

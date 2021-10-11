@@ -26,7 +26,8 @@
 \usepackage[normalem]{ulem}
 \usepackage[setpagesize=false,
             unicode=false,
-            colorlinks=true,
+            colorlinks=true,  % default was =false
+            linkcolor=blue,
             urlcolor=blue]{hyperref}
 \usepackage{datetime}
 % \usepackage[backend=biber,style=authoryear]{biblatex}
@@ -37,6 +38,7 @@
 
 \newtheorem{definition}{Definition}[section]
 \newtheorem{derivation}{Derivation}[section]
+\newtheorem{belief}{Belief}[section]
 
 \makeatletter
 \@ifpackageloaded{hyperref}%
