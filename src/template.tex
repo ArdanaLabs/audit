@@ -16,6 +16,7 @@
 \usepackage{eurosym}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{thmtools}
 \usepackage{mathtools}
 \usepackage{upquote}
 \usepackage{microtype}
@@ -39,6 +40,7 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{derivation}{Derivation}[section]
 \newtheorem{belief}{Belief}[section]
+
 
 \makeatletter
 \@ifpackageloaded{hyperref}%
@@ -108,11 +110,13 @@ $endif$
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{2}
 \tableofcontents
+\renewcommand{\listtheoremname}{List of beliefs}
+\listoftheorems[ignoreall,show={belief},swapnumber]
+% \renewcommand{\listtheoremname}{List of definitions}
+% \listoftheorems[ignoreall,show={definition}]
 
 $body$
 
 % \printbibliography
-
-\appendix
 
 \end{document}

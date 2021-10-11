@@ -8,7 +8,7 @@ Recommendations are assigned a five-valued confidence.
 
 ## Keep the DeX closed source to prevent forking
 
-This can play a role in reducing vampire attack risk. Confidence in importance: very low
+This can play a role in reducing vampire attack risk, and other considerations in . Confidence in importance: very low
 
 ## Peg fee structure to governance (i.e. `DANA` holders) to avoid competition 
 

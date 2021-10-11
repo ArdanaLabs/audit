@@ -1,4 +1,3 @@
-\chapter{Appendices}
 # Appendix A: invariant polynomial \label{apdx:inv}
 
 [@StableSwapWhitepaper] gives us a way of easing between constant-sum and constant-product market-making by a coefficient $\chi$ called _leverage_, which turns out to be a function of $D$ and $B(s)$, where $B : S \rightarrow \mathbb{R}^n$\footnote{Balances are strictly positive, so it's not really $\mathbb{R}^n$, however we enjoy some vector space properties in [@DanaswapWhitepaper, p. 6] so we do not constrain the set.} is a function assigning in every state a balance to each of $n$ assets. In what follows, let $x = B(s)$ such that $x_j = B(s)_j$ for each asset label $j$.

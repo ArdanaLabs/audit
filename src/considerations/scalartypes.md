@@ -1,5 +1,3 @@
-\chapter{Considerations}
-
 # Scalar types
 
 ## Onchain components

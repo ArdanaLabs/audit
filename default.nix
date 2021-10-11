@@ -6,7 +6,7 @@ with pkgs;
 let deps = [
       (texlive.combine
         { inherit (texlive)
-        scheme-small datetime xpatch fmtcount;
+        scheme-small thmtools datetime xpatch fmtcount;
         }
       )
       haskellPackages.pandoc

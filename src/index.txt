@@ -1,10 +1,14 @@
 src/preamble/executive.md
 src/preamble/preamble.md
+src/CHAPTERNAMES/considerations.md
 src/considerations/scalartypes.md
 src/considerations/rootfinding.md
 src/considerations/throughput.md
+src/CHAPTERNAMES/attacks.md
+src/attacks/dos.md
 src/attacks/vampire.md
 src/attacks/flash.md
 src/attacks/reentrancy.md
+src/CHAPTERNAMES/appendices.md
 src/appendices/invariant.md
-src/bibliography.md
+src/CHAPTERNAMES/bibliography.md
