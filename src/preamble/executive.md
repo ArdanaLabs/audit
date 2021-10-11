@@ -10,7 +10,7 @@ Recommendations are assigned a five-valued confidence.
 
 This can play a role in reducing vampire attack risk. Confidence in importance: very low
 
-## Peg fee structure to governance (i.e. Dana holders) to avoid competition 
+## Peg fee structure to governance (i.e. `DANA` holders) to avoid competition 
 
 This reduces vampire attack risk, details \ref{section:vampattacked}. Confidence in importance: medium. 
 

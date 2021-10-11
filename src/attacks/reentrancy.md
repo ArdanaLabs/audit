@@ -1,6 +1,10 @@
 # Reentrancy
 
-A procedure is **reentrant** if it can be initiated while it's already running or a prior initiation has been interrupted and both runs can terminate, failing to raise an error. The infamous "DAO Hack" of 2016 occurred because Solidity allows the programmer to write reentrant smart contracts [@SCSec, pp. 59-63]. 
+\begin{definition}[Reentrant]\label{dfn:reentrant}
+A procedure is \textbf{reentrant} if it can be initiated while it's already running or a prior initiation has been interrupted and both runs can terminate, failing to raise an error.
+\end{definition}
+
+The infamous "DAO Hack" of 2016 occurred because Solidity allows the programmer to write reentrant smart contracts [@SCSec, pp. 59-63]. 
 
 \begin{belief}[No reentrancy]\label{blf:reent}
 Plutus does not afford the freedom to write reentrant contracts.

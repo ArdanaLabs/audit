@@ -31,4 +31,4 @@ When the derivative can be found in a neighborhood of zero, Newton's method does
 
 We currently solve in `DanaswapStats` and oblige onchain logic to provide an $\epsilon$-proof that the root is valid. 
 
-
+## TODO after team is prepared to do numerical analysis stuff: complete this section. 

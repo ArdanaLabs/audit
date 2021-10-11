@@ -39,7 +39,7 @@ Suppose further that, having open sourced the Danaswap repo, this competitor's p
 
 ### Mitigations
 
-* **Keeping the DeX code closed source**. This is a minor payout in risk reduction
+* **Keeping the `Danaswap` code closed source**. This is a minor payout in risk reduction
 
 * **Peg fee parameters to democracy via `DANA` governance token holders**. The \nameref{dfn:community}'s preferences are a part of the competitive landscape; if a derivative competitor is closer to our \nameref{dfn:community}'s wants and needs than we are, then the Ardana \nameref{dfn:community} will be siphoned out of Ardana. An automatic mechanism to decrease this possibility would look simply like setting policies such as the fee structure with vote inputs from the \nameref{dfn:community}, however, automation shouldn't be the last word; attention and care will have to be paid to make sure people are actually using the mechanism. I see this having a stronger payout in risk reduction. 
 

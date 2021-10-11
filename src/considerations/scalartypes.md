@@ -11,3 +11,5 @@ For the smart contract, we require calculations which are highly precise and can
 ## Offchain components
 
 `DanaswapStats` uses vanilla haskell's `Double` type to solve the invariant function. 
+
+## TODO after team is prepared to do numerical analysis stuff: finalize this section.
