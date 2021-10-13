@@ -3,7 +3,7 @@
 TODO: establish throughput problem with language from [@Throughput].
 
 \begin{definition}[Fairness]\label{dfn:fairness}
-A DeX's concurrency solution is \textbf{fair} if when two people perform an action at the same time, that action is performed for roughly the same price. 
+A DeX's concurrency solution is \textbf{fair} if when two people perform an action at the same time, that action is performed for the same price. 
 \end{definition}
 
 > The Cardano mempool is designed to be "fair". Transactions are processed in a FIFO order regardless or how much in fees they pay (the ledger spec does support a fee market, but cardano-node doesn't take this into account) [@CardanoNodeThroughput]

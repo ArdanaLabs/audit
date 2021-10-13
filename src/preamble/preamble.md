@@ -18,6 +18,8 @@ A community consists of liquidity providers, investors, swappers, arbitrageurs, 
 
 * The audit is **as much as was possible to do before launch time, not exhaustive**.
 
+
+
 # Considerations
 
 In this chapter we look at broad concepts and decisions and provide context into the way the team is thinking about them. This section should add indirect value to the process of taking informed risks.

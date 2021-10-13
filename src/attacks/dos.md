@@ -26,7 +26,7 @@ An attacker submits a barrage of vacuous transactions consuming blocking EUTXOs.
 
 [@MlabsSlab] points to [@NativeTokFAQ] section on `Min-Ada-Value` as a mechanism that can be leveraged to block \nameref{dfn:tokendust}, but it's on the developer to set it and its implementation effects honest users.
 
-> Every output created by a transaction must include a minimum amount of ada, which is calculated based on the size of the output (that is, the number of different token types in it, and the lengths of their names). [@NativeTokFAQ].
+> Every output created by a transaction must include a minimum amount of `ADA`, which is calculated based on the size of the output (that is, the number of different token types in it, and the lengths of their names). [@NativeTokFAQ].
 
 With similar drawbacks, fees or discincentives could block \nameref{dfn:concurrencydos}, where again honest users are impacted by the mechanism.
 

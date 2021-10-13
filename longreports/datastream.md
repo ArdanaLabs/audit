@@ -1,3 +1,5 @@
+# This is the old version, `Danaswap` went in a different direction so this is no longer relevant and I decided to start over a new document in `src/considerations` for the `stablecoin` related stuff. 
+
 # On datastream integrity
 
 There are a couple places in the Ardana ecosystem that suggest **interaction with live datastreams**. A variety of software concerns such as API integration practices or keeping a stream open are ignored in the current document.
