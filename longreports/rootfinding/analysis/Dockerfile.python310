@@ -1,0 +1,16 @@
+FROM python:latest
+
+WORKDIR home/
+
+# update package list and upgrade pip
+RUN apt-get update -y && python -m pip install --upgrade pip
+
+# install internals for scipy
+RUN apt-get install gcc gfortran libopenblas-dev liblapack-dev -y
+
+# preliminary pip run
+RUN pip install jax numpy scipy pandas matplotlib
+
+# second pip run
+RUN pip install jupyterlab altair seaborn arviz numpyro
+# fails

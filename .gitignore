@@ -2,3 +2,4 @@
 */*/*.ipynb_checkpoints/
 .lia.cache
 result
+*/*/*/__pycache__

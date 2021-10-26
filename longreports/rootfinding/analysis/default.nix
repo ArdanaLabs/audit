@@ -8,7 +8,7 @@ let
       ref = "main";
       url = "https://github.com/on-nix/python";
     }) {};
-  env = pythonOnNix.python37Env {
+  env = pythonOnNix.python39Env {
     name = "Danaswap-analytics";
     projects = {
       pandas = "latest";
@@ -20,10 +20,11 @@ let
       jupyter-client = "latest";
       jupyterlab-widgets = "latest";
       jupyterhub = "latest";
-      pamela = "latest"; # needed for jupyterhub 
+      pamela = "latest"; # needed for jupyterhub  # broken
       nbformat = "latest";  
       ipykernel = "latest";
       ipython = "latest"; 
+      jax = "latest";
     };
   };
 in env.dev
