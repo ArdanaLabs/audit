@@ -12,24 +12,24 @@ module Companion.Types
   , polynomialApply
   ) where
 
-newtype Amplification = Amplification { unAmplification :: Double } deriving (Eq, Show)
+newtype Amplification = Amplification { unAmplification :: Double } deriving (Eq, Show, Ord)
 constantAmp = Amplification 85
 
-newtype D = D { unD :: Double } deriving (Eq, Show)
+newtype D = D { unD :: Double } deriving (Eq, Show, Ord)
 
 newtype Balances = Balances { unBalances :: [Double] } deriving (Eq, Show)
 
-newtype BalanceIdx = BalanceIdx { unBalanceIdx :: Int } deriving (Eq, Show)
+newtype BalanceIdx = BalanceIdx { unBalanceIdx :: Int } deriving (Eq, Show, Ord)
 
-newtype Coefficient = Coefficient { unCoefficient :: Double } deriving (Eq, Show)
+newtype Coefficient = Coefficient { unCoefficient :: Double } deriving (Eq, Show, Ord)
 
 newtype Polynomial = Polynomial { unPolynomial :: [Coefficient] } deriving Eq
 
 instance Show Polynomial where
-  show (Polynomial coefs) = foldr (\x y -> x ++ " + " ++ y) ("x^" ++ show n) [
+  show (Polynomial coefs) = foldr (\x y -> x ++ " + " ++ y) ("x^" ++ (show $ length coefs)) [
     show (unCoefficient coef) ++ "x^" ++ show k |
-    (coef, k) <- zip coefs [0..n - 1]
-    ] where n = length coefs
+    (coef, k) <- zip coefs [0..]
+    ]
 
 deleteIdx :: Int -> [a] -> [a]
 deleteIdx i xs = take i xs ++ drop (i + 1) xs

@@ -3,3 +3,4 @@
 .lia.cache
 result
 */*/*/__pycache__
+longreports/rootfinding/companion/proof-of-concept/dist*

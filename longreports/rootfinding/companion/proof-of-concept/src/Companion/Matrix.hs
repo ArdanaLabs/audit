@@ -1,6 +1,10 @@
 -- |
 
-module Companion.Matrix where
+module Companion.Matrix
+  ( companionD4
+  , companionD3
+  , companionK2
+  ) where
 
 import Companion.Types
 
@@ -24,8 +28,5 @@ companionD4 (Polynomial (Coefficient s:Coefficient t:_)) = (4><4)
 companionD3 :: Polynomial -> Matrix Double
 companionD3 (Polynomial (Coefficient s:Coefficient t:_)) = (3><3) [0,0,-s, 1,0,-t, 0,1,0]
 
-companionD2 :: Polynomial -> Matrix Double
-companionD2 (Polynomial (Coefficient u:Coefficient v:[])) = (2><2) [0,-u, 1,-v]
-
-companionIxi :: Double -> Double -> [[Double]]
-companionIxi u v = [[0, - v], [1, - u]]
+companionK2 :: Polynomial -> Matrix Double
+companionK2 (Polynomial (Coefficient u:Coefficient v:[])) = (2><2) [0,-u, 1,-v]

@@ -71,6 +71,27 @@ library
   -- Base language which the package is written in.
   default-language:    Haskell2010
 
+test-suite spec
+  main-is:             Spec.hs
+  type:                exitcode-stdio-1.0
+  -- ghc-options:         -Wall -Werror -threaded
+  hs-source-dirs:      src, src/Test
+  build-depends:       base >=4.12 && <4.15,
+                       hmatrix >=0.20.2 && <0.21,
+                       vector >=0.11 && <=0.12.4,
+                       -- eigen >=2.1.6 && <3.3.4.3,
+                       -- lapack >0.3 && <=0.4,
+                       criterion >=1.2.2 && <1.5.12,
+                       QuickCheck >=2.13.1 && <=2.14.2,
+                       hedgehog >=1 && <=1.0.5,
+                       hlint
+  other-modules:       Companion.Types
+                     , Companion.Coefficients
+                     , Companion.Matrix
+                     , Companion.Invariant
+                     , Test.Generators
+                     , Test.Quadratic
+
 
 executable eigencompanion-PoC
   -- .hs or .lhs file containing the Main module.
