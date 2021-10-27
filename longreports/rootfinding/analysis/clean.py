@@ -12,8 +12,8 @@ def tofloat(dat: pd.DataFrame) -> pd.DataFrame:
     """Convert pretty printed rationals to floats."""
     return dat.assign(**{col: dat[col].map(eval) for col in dat.columns})
 
-def mknewtondelta(dat: pd.DataFrame, abso: bool) -> pd.DataFrame:
-    diff = dat.D - dat.Root
+def mknewtondelta(dat: pd.DataFrame, unknown_feature: str, abso: bool) -> pd.DataFrame:
+    diff = dat[unknown_feature] - dat["Root"]
     if abso:
         newton_delta = diff.abs()
     else:
@@ -24,15 +24,15 @@ def mknewtondelta(dat: pd.DataFrame, abso: bool) -> pd.DataFrame:
 def sqnewtondelta(dat: pd.DataFrame) -> pd.DataFrame:
     return dat.assign(squared_newton_delta=dat.newton_delta ** 2)
 
-def clean(dat: pd.DataFrame, abso: bool) -> pd.DataFrame:
-    return dat.pipe(tofloat).pipe(mknewtondelta, abso).pipe(sqnewtondelta)
+def clean(dat: pd.DataFrame, unknown_feature: str, abso: bool) -> pd.DataFrame:
+    return dat.pipe(tofloat).pipe(mknewtondelta, unknown_feature, abso).pipe(sqnewtondelta)
 
 class Clean:
-    def __init__(self, filepath: str, *, abso: bool = True):
+    def __init__(self, filepath: str, *, unknown_feature: str, abso: bool = True):
         self.filepath = filepath
         self.abso = abso
         self._df = pd.read_csv(filepath, header=1)
-        self.df = clean(self._df, abso)
+        self.df = clean(self._df, unknown_feature, abso)
         self._heatmap = partial(_heatmap_, scipy.stats, altair, self.df)
         self._heatmaps = partial(_heatmaps_, scipy.stats, altair, self.df)
         self._mkscatter = partial(_mkscatter_, jax.numpy, matplotlib.pyplot, self.df)

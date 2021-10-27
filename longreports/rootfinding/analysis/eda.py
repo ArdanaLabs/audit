@@ -1,4 +1,5 @@
 from functools import reduce
+from itertools import combinations
 
 def _mkscatter_(jnp: "module", plt: "module", df: "pd.DataFrame", col: str) -> "IO(plt.axis)":
     assert col in df.columns, "col must be in df.columns"
@@ -11,7 +12,7 @@ def _mkscatter_(jnp: "module", plt: "module", df: "pd.DataFrame", col: str) -> "
     plt.title(col);
 
 def _mkkde_(az: "module", df: "pd.DataFrame", col: str) -> "IO(plt.Axis)":
-    az.plot_kde(df[col]);
+    az.plot_kde(df[col], rug=True);
 
 
 def _heatmap_(stats: "module", alt: "module", dat: "pd.DataFrame", x: str, y: str, color: str) -> "alt.Chart":

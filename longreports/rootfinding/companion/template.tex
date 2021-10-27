@@ -31,11 +31,6 @@
             linkcolor=blue,
             urlcolor=blue]{hyperref}
 \usepackage{datetime}
-% \usepackage[backend=biber,style=authoryear]{biblatex}
-% \bibliography{src/biblio}
-% \addbibresource{./biblio.bib}
-% \usepackage{biber}
-
 
 \newtheorem{definition}{Definition}[section]
 \newtheorem{derivation}{Derivation}[section]
@@ -72,7 +67,7 @@ $highlighting-macros$
 
 
 % Make links footnotes instead of hotlinks
-\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+% \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
 
 
 % Avoid problems with \sout in headers with hyperref:
@@ -107,19 +102,6 @@ $endif$
 
 \renewcommand{\thechapter}{\Roman{chapter}}
 
-\input{src/cover}
-
-% Chapter: 0, section: 1, subsection: 2 etc
-\setcounter{secnumdepth}{5}
-\setcounter{tocdepth}{2}
-\tableofcontents
-\renewcommand{\listtheoremname}{List of beliefs}
-\listoftheorems[ignoreall,show={belief},swapnumber]
-% \renewcommand{\listtheoremname}{List of definitions}
-% \listoftheorems[ignoreall,show={definition}]
-
 $body$
-
-% \printbibliography
 
 \end{document}
