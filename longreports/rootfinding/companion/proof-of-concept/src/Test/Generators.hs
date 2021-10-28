@@ -14,12 +14,13 @@ instance Arbitrary Amplification where
 instance Arbitrary D where
   arbitrary = liftM (D . getPositive) (arbitrary :: Gen (Positive Double))
 
+numAssets = 8
 
 instance Arbitrary Balances where
-  arbitrary = liftM (Balances . (map getPositive)) (vectorOf 8 (arbitrary :: Gen (Positive Double)))
+  arbitrary = liftM (Balances . (map getPositive)) (vectorOf numAssets (arbitrary :: Gen (Positive Double)))
 
 instance Arbitrary BalanceIdx where
-  arbitrary = liftM BalanceIdx $ elements [0..8 - 1]
+  arbitrary = liftM BalanceIdx $ elements [0..numAssets - 1]
 
 -- no more than 10 assets
 --arbBalances :: Int -> Gen Balances

@@ -9,11 +9,14 @@ import Test.Quadratic
 
 import Test.QuickCheck
 
-epsilon = 1 / 10 ^ 7
+precisionOOM = 128
+epsilon = 1 / 10 ^ precisionOOM
+
+maxTests = 10000
 
 main = do
-  quickCheck prop_companionQuadraticNoImaginary
-  quickCheck prop_companionQuadraticUniquePosrealRoot
-  quickCheck (prop_formulaRootsAreRoots epsilon)
-  quickCheck (prop_companionEVsAreRoots epsilon)
-  quickCheck (prop_quadraticIsomorphism epsilon)
+  quickCheck (withMaxSuccess maxTests prop_companionQuadraticNoImaginary)
+  quickCheck (withMaxSuccess maxTests prop_companionQuadraticUniquePosrealRoot)
+  quickCheck (withMaxSuccess maxTests (prop_formulaRootsAreRoots epsilon))
+  quickCheck (withMaxSuccess maxTests (prop_companionEVsAreRoots epsilon))
+  quickCheck (withMaxSuccess maxTests (prop_quadraticIsomorphism epsilon))
