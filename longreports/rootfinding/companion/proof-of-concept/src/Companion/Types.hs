@@ -26,7 +26,7 @@ newtype Coefficient = Coefficient { unCoefficient :: Double } deriving (Eq, Show
 newtype Polynomial = Polynomial { unPolynomial :: [Coefficient] } deriving Eq
 
 instance Show Polynomial where
-  show (Polynomial coefs) = foldr (\x y -> x ++ " + " ++ y) ("x^" ++ (show $ length coefs)) [
+  show (Polynomial coefs) = foldr (\x y -> x ++ " + " ++ y) ("x^" ++ show (length coefs)) [
     show (unCoefficient coef) ++ "x^" ++ show k |
     (coef, k) <- zip coefs [0..]
     ]

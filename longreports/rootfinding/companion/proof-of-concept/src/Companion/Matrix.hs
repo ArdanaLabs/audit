@@ -1,32 +1,18 @@
 -- |
 
-module Companion.Matrix
-  ( companionD4
-  , companionD3
-  , companionK2
-  ) where
+module Companion.Matrix (companion) where
 
 import Companion.Types
 
 import Numeric.LinearAlgebra
 
--- special case
-identity' :: Int -> [[Double]]
-identity' n =  [
-  replicate k 0 ++ [1] ++ replicate (n - 1 - k) 0 | k <- [0..n - 1]
-  ]
-companionD4 :: Polynomial -> Matrix Double
-companionD4 (Polynomial (Coefficient s:Coefficient t:_)) = (4><4)
-  (replicate (4 - 1) 0 ++ [- s]
+companion :: Polynomial -> Matrix Double
+companion (Polynomial []) = (0><0) []
+companion (Polynomial xs) = (n><n)
+  (replicate (n - 1) 0 ++ [- (unCoefficient $ head xs)]
   ++
-  [1] ++ replicate (4 - 2) 0 ++ [- t]
-  ++
-  [0, 1] ++ replicate (4 - 2) 0
-  ++
-  [0, 0, 1] ++ replicate (4 - 3) 0)
+  concat [replicate k 0 ++ [1] ++ replicate (n - 2 - k) 0 ++ [- unCoefficient x'] | (k, x') <- zip [0..] (tail xs)])
+  where n = length xs
+        z = Coefficient 0
+        o = Coefficient 1
 
-companionD3 :: Polynomial -> Matrix Double
-companionD3 (Polynomial (Coefficient s:Coefficient t:_)) = (3><3) [0,0,-s, 1,0,-t, 0,1,0]
-
-companionK2 :: Polynomial -> Matrix Double
-companionK2 (Polynomial (Coefficient u:Coefficient v:[])) = (2><2) [0,-u, 1,-v]

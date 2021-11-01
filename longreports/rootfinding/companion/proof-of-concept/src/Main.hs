@@ -26,8 +26,8 @@ main = do
   let iD3 = iD a balances
   print ("Invariant polynomial for three balances = " ++ show iD3)
   putStr "C(I_D^3) = "
-  print $ companionD4 iD3
-  let roots = VS.toList $ eigenvalues $ companionD4 iD3
+  print $ companion iD3
+  let roots = VS.toList $ eigenvalues $ companion iD3
       acomplexRoots = filter (\r -> imagPart r == 0.0) roots
       realPartsAcomplexRoots = map realPart acomplexRoots
   -- Should have exactly one posreal root
