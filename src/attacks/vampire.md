@@ -46,3 +46,5 @@ Suppose further that, having open sourced the Danaswap repo, this competitor's p
 In any kind of market, participants take on the unavoidable risk of competitors showing up with better rates. The factor of code forking presented by the open source software context doesn't change this much, and the factor of fee structure parameters presented by the cryptoeconomic context doesn't either.
 
 Vampire attack is a loose mirage of competitive phenomena: ultimately judged by the ecosystem literature, often coming down to individual journalists or researchers. It is in principle possible to be accidentally accused of vampire attacking. We do not want value siphoned out: there exist some practices to decrease this possibility that mostly amount to community engagement.
+
+Hello test
