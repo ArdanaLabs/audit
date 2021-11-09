@@ -10,6 +10,8 @@ Ardana ecosystem components do not offer a \textbf{unique} \nameref{dfn:dos} vec
 
 However, we think \nameref{dfn:community} ought to be made aware of _ambient_ vulnerabilities in the broader Plutus and Cardano ecosystem. 
 
+### Onchain
+
 We rely on [@MlabsSlab] to describe three flavors of onchain DoS vector, which essentially target `Validator`s or `Redeemer`s.
 
 \begin{definition}[Token dust attack]\label{dfn:tokendust}
@@ -31,6 +33,14 @@ An attacker submits a barrage of vacuous transactions consuming blocking EUTXOs.
 With similar drawbacks, fees or discincentives could block \nameref{dfn:concurrencydos}, where again honest users are impacted by the mechanism.
 
 Neither ourselves nor [@MlabsSlab] provide a strategy against \nameref{dfn:largedatum}.
+
+### Offchain \label{section:pabdos}
+
+As of this writing, `plutus` depends on the JSON parsing and encoding library [`aeson`](https://hackage.haskell.org/package/aeson). This means that `PAB` artefacts, if the `aeson` version is `< 2.0.1.0`, will be subject to the known DoS vulnerability described in [@AesonDos]. 
+
+#### Recomendation
+
+Build system should enforce `aeson >= 2.0.1.0`.
 
 ## Conclusion
 

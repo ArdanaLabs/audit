@@ -1,3 +1,5 @@
+# THIS IS DATED: [THIS IS THE DIRECTORY WHERE STUFF IS UPDATED](https://github.com/ArdanaLabs/ardana-dollar/tree/main/docs/utxo-design)
+
 # Stablecoin Specifications Distill
 
 The following is a distillation of [utxo-design.md](https://github.com/ArdanaLabs/ardana-dollar/blob/main/utxo-design.md) and [endpoint-spec.md](https://github.com/ArdanaLabs/ardana-dollar/blob/main/endpoint-spec.md) provided by Quinn, original documents provided by Ben and others from mlabs. **Note**: occasionally distillation involves plagiarism.

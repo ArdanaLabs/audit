@@ -7,7 +7,7 @@ let
       # https://github.com/on-nix/python/commits/main
       ref = "main";
       url = "https://github.com/on-nix/python";
-    }) {};
+    }) { inherit pkgs; };
   env = pythonOnNix.python39Env {
     name = "Danaswap-analytics";
     projects = {
@@ -16,15 +16,14 @@ let
       altair = "latest";
       seaborn = "latest";
       matplotlib = "latest";
-      jupyter-core = "latest";
-      jupyter-client = "latest";
+      arviz = "latest";
+      jupyterlab = "latest";
       jupyterlab-widgets = "latest";
-      jupyterhub = "latest";
-      pamela = "latest"; # needed for jupyterhub  # broken
-      nbformat = "latest";  
-      ipykernel = "latest";
-      ipython = "latest"; 
+      # nbformat = "latest";
+      # ipykernel = "latest";
+      # ipython = "latest";
       jax = "latest";
+      numpyro = "latest";
     };
   };
 in env.dev

@@ -1,0 +1,4 @@
+(coq.theory
+    (name EUTXO)
+    (modules Structures Lens Types Valid CEM)
+    (synopsis "https://iohk.io/en/research/library/papers/the-extended-utxo-model/"))

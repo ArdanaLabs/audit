@@ -1,6 +1,7 @@
 .ipynb_checkpoints/
-*/*/*.ipynb_checkpoints/
 .lia.cache
 result
-*/*/*/__pycache__
+__pycache__
 longreports/rootfinding/companion/proof-of-concept/dist*
+xxx/
+_build

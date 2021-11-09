@@ -18,6 +18,10 @@ This reduces vampire attack risk, details \ref{section:vampattacked}. Confidence
 
 With mitigation strategy sketches provided in \ref{section:flashmitigation}. Confidence in importance: very high
 
+## Enforce `aeson >= 2.0.1.0` at build time.
+
+\ref{section:pabdos}. Confidence in importance: very high. 
+
 # Nonissues
 
 During the audit process research was conducted to rule out the following attack vectors.
@@ -29,9 +33,9 @@ During the audit process research was conducted to rule out the following attack
 
 # Insufficient literature
 
-As of this writing, the jury is still out on the following considerations or attack vectors.
+As of this writing, the jury is still out on the following considerations or attack vectors. Research opportunities are detailed in \ref{section:future}.
 
-1. **Transaction-ordering dependence**: waiting on publications or code from IOHK to determine network fee resolution and their impact on miner incentives. (This is blocking any confidence level regarding the frontrunning question). A comment in [@CardanoNodeThroughput] suggests that miner-type frontrunning will not be an issue, but our confidence is not high in everything shaking out that way. 
+1. **Transaction-ordering dependence**: waiting on publications or code from IOHK to determine network fee resolution and their impact on miner incentives. 
 
-2. Filler, need a second item to block a render bug. 
+2. **Cost semantics and gas**: waiting on publications or code from IOHK to determine network fee resolution. 
 
