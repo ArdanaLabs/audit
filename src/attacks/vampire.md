@@ -27,7 +27,7 @@ Are there competing DeXs that beat us to market that could accuse us of vampire 
 
 Imagine if a bunch of Curve investors pull out their liquidity, exchange it for `ADA` on Coinbase, and start playing Danaswap. Would Curve think of that like a vampire attack? The literature has not seen a vampire attack across a distance as great as that between Ethereum and Cardano, but that's only because we're early. 
 
-If the literature or ecosystem chooses to view Ardana as a vampire attacker, the project could suffer reputational damage.
+If the literature or ecosystem chooses to view Ardana as a vampire attacker, the project could suffer reputational damage. However, even in this event, it needs to be shown that the public relations problem is actually significant. I.e., is $\Pi'$'s public relations challenges impacted severely by a vampire attack accusation? It might warrant further research, but we do not conduct that research here. 
 
 ## Scenario: value siphoned out if we become $\Pi$ \label{section:vampattacked}
 

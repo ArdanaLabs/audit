@@ -1,4 +1,4 @@
-# Flashloans
+# Flashloans \label{section:flash}
 
 Flashloans are associated with something like [`$136M`](https://peckshield.medium.com/bzx-hack-full-disclosure-with-detailed-profit-analysis-e6b1fa9b18fc) [in](https://news.bitcoin.com/defi-protocol-harvest-finance-hacked-for-24-million-attacker-returns-2-5-million/) [losses](https://www.coindesk.com/markets/2021/05/20/flash-loan-attack-causes-defi-token-bunny-to-crash-over-95/). 
 \begin{definition}[Flashloan attack]\label{dfn:flashattack}

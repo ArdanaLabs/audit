@@ -1,6 +1,7 @@
 src/preamble/executive.md
 src/preamble/preamble.md
 src/CHAPTERNAMES/considerations.md
+src/considerations/code.md
 src/considerations/physical.md
 src/considerations/datastream.md
 src/considerations/scalartypes.md
