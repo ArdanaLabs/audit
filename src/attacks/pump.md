@@ -25,13 +25,13 @@ Given an exchange protocol $\Pi$, an attacker \textbf{manipulates prices} when t
 
 Trade-based manipulation in defi is most famously carried out with the help of \nameref{section:flash}, and as we claim in \ref{blf:flash} this is not a vector of attack. Another form trade-based manipulation could, in principle, take is if exchange $\Pi$ was already infected with false beliefs an agent $A$ could swap a high volume of asset $\$_i$ into asset $\$_j$ at $\Pi$ then go over to $\Theta$ with a high volume of asset $\$_j$ swapping it for $\$_i$, skewing $\Theta$'s beliefs about relative supply and demand of $\$_i$ and $\$_j$. It seems like $A$ would net a profit by playing $\Pi$ and $\Theta$ against eachother. However, we will argue that this is not a concern. 
 
-\begin{belief}[No rational price trade-based manipulation]\label{blf:pricemanip}
+\begin{belief}[No rational trade-based price manipulation]\label{blf:pricemanip}
 Trade-base price manipulation on \texttt{Danaswap} costs more than it's worth
 \end{belief}
 
 The reasons for \ref{blf:pricemanip} are twofold: 
 
-### 1. Invariant-driven beliefs
+### Invariant-driven beliefs
 
 The prices of assets in `Danaswap` are driven by **the invariant equation** a la [@StableSwapWhitepaper], seeing also [@DanaswapWhitepaper] for details. If "value" $V$ is a reasonably well-behaved (i.e. something like "continuous") map from the set of assets to $\mathbb{R}$, then a price manipulation attack would be some way of siphoning out $\Sigma_{i = 1}^{n} V(\$_i)$ into the pocket of an attacker. It is the case that, due to transition system semantics and the invariant equation, any starting state $(x : \$_i, y: \$_j)$ **must** by construction transition to $(x - \delta : \$_i, y + \delta : \$_j)$ under the suitable swapping transaction; i.e. _must not_ transition to $(x - \delta : \$_i, y : \$_j)$ with the amount $\delta$ of $\$_i$ deposited into hte pocket of the attacker, by construction. 
 
@@ -39,33 +39,15 @@ There are two intuition pumps you can use to sympathize with this argument.
 1. There is a sort of _conservation law_ point of view, the statement $I(x) = 0$ from [@DanaswapWhitepaper] can be interpreted as saying "balances of assets are conserved" across the exchange. 
 2. We observe an absence of prince manipulation scandals in Curve, the exchange based on [@StableSwapWhitepaper]. 
 
-### 2. Incentive alignment
+### Incentive alignment
 
 \begin{belief}[Arbitrage makes belief more true]\label{blf}
 Arbitrageurs make \texttt{Danaswap}'s beliefs more true.
 \end{belief}
 
-In light of rudimentary definitions of arbitrage ([Wikipedia](https://en.wikipedia.org/wiki/Arbitrage#Price_convergence), [Investopedia](https://www.investopedia.com/terms/a/arbitrage.asp)), this is equivalent to believing that `Danaswap` forms a market at all. 
+In light of rudimentary definitions of arbitrage ([Wikipedia](https://en.wikipedia.org/wiki/Arbitrage#Price_convergence), [Investopedia](https://www.investopedia.com/terms/a/arbitrage.asp)), this is trivially equivalent to believing that `Danaswap` forms a market at all. Consequently, if some agent puts pressure on making `Danaswap`'s beliefs less true, the community of arbitrageurs will step in and apply counterpressure because it is in their interest to do so, following the definition of arbitrage. 
 
 ## Information-based manipulation
 
 Another flavor in [@Manipulation]'s taxonomy is information-based manipulation. In information-based manipulation, the manipulator leverages **disinformation** to knock prices in a direction favorable to them [@Manipulation, p. 4]. 
-
-
-
-
-
-
-
-DRAFT: 
-you want to extract value from the system by making trades
-1. trade in one direction to drive the exchange rate low in one direction, then buy back in the other direction. 
-2. **assuming** a sufficient community (wait this isn't going anywhere)
-3. the only way to extract money from a system is to bring the system closer to equilibrium, where eqilibrium is the V(a) = V(b). 
-
-
-
-a huge trade will skew the exchange rates
-
-anything that someone does will be evened out by the community of arbitrageurs, who will profit from fixing the situation.
 
