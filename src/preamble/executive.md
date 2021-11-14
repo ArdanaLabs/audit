@@ -1,14 +1,14 @@
 \chapter{Executive summary}
 
-Platonic.Systems has conducted an internal \nameref{dfn:audit} parallel to the engineering efforts building Danaswap, Ardana stablecoins, and Dana governance token mechanisms. 
+Platonic.Systems has conducted an internal \nameref{dfn:audit} parallel to the engineering efforts building `Danaswap`, Ardana stablecoins, and `DANA` governance token mechanisms. 
 
 # Recommendations
 
 Recommendations are assigned a five-valued confidence. 
 
-## Keep the DeX closed source to prevent forking
+## Keep Ardana components closed source, or under complex licensing, to prevent forking
 
-This can play a role in reducing vampire attack risk, and other considerations in . Confidence in importance: very low
+This can play a role in reducing vampire attack risk. Confidence in importance: very low
 
 ## Peg fee structure to governance (i.e. `DANA` holders) to avoid competition 
 

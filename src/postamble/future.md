@@ -18,7 +18,7 @@ There is also the extent to which liquidity arbitrage arises due to parallelizat
 
 Further research pressure ought to be applied to see if liquidity arbitrage aligns with the function of arbitrage in general (\ref{blf:arbtrue}) or forms a kind of threat. 
 
-## Ideal `Danaswap` vs. an attacker with infinite money \label{section:infinite}
+## Idealized `Danaswap` vs. an attacker with infinite money \label{section:infinite}
 
 We take the limit case of an idealized `Danaswap` which has arbitrary facility to add subpools and consider how an attacker with infinite money would approach making `Danaswap`'s beliefs less true. This thought experiment could provide confidence in beliefs along the lines of \ref{section:pump}, and instruct us to for instance impose minimum trade requirements or implement automatic addition and subtraction of pools such that the protocol becomes more resilient to "economic DoS".
 
