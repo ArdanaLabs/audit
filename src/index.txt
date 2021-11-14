@@ -17,6 +17,4 @@ src/attacks/danagoup.md
 src/CHAPTERNAMES/postamble.md
 src/postamble/fv.md
 src/postamble/future.md
-src/CHAPTERNAMES/appendices.md
-src/appendices/invariant.md
 src/CHAPTERNAMES/bibliography.md

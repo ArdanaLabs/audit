@@ -9,3 +9,7 @@ Note the first section of each chapter (with respect to the ordering in `index.t
 ## `.csl` sheets
 
 You can get [`.csl` sheets here](https://github.com/citation-style-language/styles/) which in theory style up the bibliography, but we're not currently using _any_ in the render because of what is either a pandoc bug or improper usage. 
+
+## On appendices
+
+I have removed `invariant derivations` from `index.txt`, and since that was the only appendix **we currently have no appendices**. I'm saving the contents of `invariant.md` for a future publication on rootfinding. 
