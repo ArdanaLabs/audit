@@ -41,7 +41,7 @@ There are two intuition pumps you can use to sympathize with this argument.
 
 ### Incentive alignment
 
-\begin{belief}[Arbitrage makes belief more true]\label{blf}
+\begin{belief}[Arbitrage makes belief more true]\label{blf:arbtrue}
 Arbitrageurs make \texttt{Danaswap}'s beliefs more true.
 \end{belief}
 

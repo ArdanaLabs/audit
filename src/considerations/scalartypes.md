@@ -1,13 +1,19 @@
 # Scalar types
 
-## Onchain components
+## `Danaswap`
 
-We use [`PlutusTx.Rational`](https://github.com/input-output-hk/plutus/blob/master/plutus-tx/src/PlutusTx/Ratio.hs) to represent numbers in the Danaswap contract. As of this writing, tolerance (number of decimals needed to evaluate equality) is set to `30`. 
+The Ardana team uses [`PlutusTx.Rational`](https://github.com/input-output-hk/plutus/blob/master/plutus-tx/src/PlutusTx/Ratio.hs) to represent numbers in the `Danaswap` contract. As of this writing, tolerance (number of decimals needed to evaluate equality) is set to `20`. 
 
-For the smart contract, we require calculations which are highly precise and can handle very large numbers and can be reproduced exactly across different hardware. Using FLOPs (floating point operations) is not compatible with these requirements. We are not able to determine exactly how big or how precise our numbers need to be, so we cannot say that FLOPs allow for enough size and precision. We can say, however, that FLOPs are implemented slightly differently on different hardware and results may not be reproducible across different hardware. Additionally, FLOPs are not allowed to be used in Plutus on-chain code. These are the constraints which do not allow us to use `Double` to represent numbers in the smart contract.
+\begin{belief}[FLOPs incompatible with `Danaswap` requirements]\label{blf:noflop}
+The `Danaswap` smart contract requires 1. extreme precision, 2. very large numbers, and 3. exact reproduction across varying hardware. Floating point operations (FLOPs) are incompatible with the requirements. 
+\end{belief}
 
-## Offchain components
+Addtionally, the `Danaswap` team does not _a priori_ know exactly how big the numbers need to be. Additionally, the `Floating` typeclass is not provided by `plutus`, meaning if `Double` was used somewhere in the `Danaswap` codebase, it would have to be cast to `PlutusTx.Rational` at some point anyway. 
 
-`DanaswapStats` uses vanilla haskell's `Double` type to solve the invariant function. 
+## The stablecoin
 
-## TODO after team is prepared to do numerical analysis stuff: finalize this section.
+The stablecoin codebase also uses `PlutusTx.Rational`. 
+
+## `DanaswapStats` 
+
+`DanaswapStats` uses vanilla haskell's `Double` type to log data about activities on `Danaswap`. 

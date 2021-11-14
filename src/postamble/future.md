@@ -12,36 +12,20 @@ For the current document, we lack any confidence level regarding the frontrunnin
 
 ## Liquidity arbitrage
 
-Liquidity arbitrage is when an arbitrageur attempts to play `Danaswap` pools against eachother. Liquidity tokens may be priced one way in subpool $P_i$ and priced another way in $P_j$. As an intuition, we can block this by making a different type of liquidity token per subpool, but we don't want to do this for user experience reasons. 
+Liquidity arbitrage is when an arbitrageur attempts to play `Danaswap` pools against eachother. Liquidity tokens may be priced one way in subpool $P_i$ and priced another way in $P_j$. As an intuition, we can block this by making a different type of liquidity token per subpool; but we don't want to do this for user experience reasons (a zoo of liquidity tokens may be prohibitively difficult to reason about for all but a select few power users). 
 
-Arises due to parallelization. 
+There is also the extent to which liquidity arbitrage arises due to parallelization, with synchronization questions across pools complexifying the problem. 
 
-Liquidity arbitrage is when a arbitrageur attempts to play `Danaswap` pool sets against each other. When a pool has good utilization (i.e. is the right size), liquidity tokens via that pool will be 
-
-for an arbitrary subpool, liquidity price is expressed in terms of a reference currency (stablecoin), it is a number that you'd have to pay of that reference stablecoin to buy one liquidity token _in that pool_. 
-
-liquidity token price goes up with trading fees.
-
-the fees divided by the dot product of prices and balances is the yield you have expressed in assets.
-
-the relative increase of lt price (delta in assets / total assets). 
-
-if i want to sell liquidity tokens i want to sell it where the price is highest, vice versa for lowest. 
-
-**lt price is a cumulative metric for the amount of trading** in one subpool.
-
-subpool Pi has lti, subpool Pj as ltj. we artificially price lti = ltj, opening ourselves up to two types of trouble. 
-
-does depositing in a crappy subpool improve that subpool? 
-
-
-
-For pools $P_i$ and $P_j$, 
+Further research pressure ought to be applied to see if liquidity arbitrage aligns with the function of arbitrage in general (\ref{blf:arbtrue}) or forms a kind of threat. 
 
 ## Ideal `Danaswap` vs. an attacker with infinite money \label{section:infinite}
 
-We take the limit case of an idealized `Danaswap` which has arbitrary facility to add subpools and consider how an attacker with infinite money would approach `Danaswap`'s beliefs less true. This thought experiment could provide confidence in beliefs along the lines of \ref{section:pump}, and instruct us to for instance impose minimum trade requirements or implement automatic addition and subtraction of pools such that the protocol becomes more resilient to "economic DoS".
+We take the limit case of an idealized `Danaswap` which has arbitrary facility to add subpools and consider how an attacker with infinite money would approach making `Danaswap`'s beliefs less true. This thought experiment could provide confidence in beliefs along the lines of \ref{section:pump}, and instruct us to for instance impose minimum trade requirements or implement automatic addition and subtraction of pools such that the protocol becomes more resilient to "economic DoS".
 
 ## Resilience of `Danaswap` to action-based \nameref{dfn:pump}
 
 In \ref{section:pump} we considered trade-based manipulation and briefly mentioned centralization's opening to information-based manipulation, but [@Manipulation] also defines action-based manipulation. As Ardana is one component in a chaotic system consisting of many different kinds of agents and assets both onchain and offchain, there is _some_ degree to which action-based (like when you short-sell your own stock, close down your physical capital centers, cover your short position, then reopen the physical capital centers) manipulation could play a role. 
+
+## Understand \ref{section:danagoupanalysis} better to come up with a _minimal_ intervention
+
+Ardana's intervention to mitigate the problem of a whale sitting on `DANA` is a little heavy handed. While it is in scope for the post-launch evolution of the platform to work on decentralizing the mitigation is installed at launch, it also may warrant application of research pressure to come up with different solutions. 

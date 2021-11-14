@@ -39,3 +39,4 @@ As of this writing, the jury is still out on the following considerations or att
 
 2. **Cost semantics and gas**: waiting on publications or code from IOHK to determine network fee resolution. 
 
+

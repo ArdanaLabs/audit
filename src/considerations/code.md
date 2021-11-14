@@ -14,6 +14,6 @@ In internal documents, the Ardana team set engineering standards.
 
 6. `newtype` constructor-destructor pairs rather than aliases and rather than passing around types like `String`, `Bool`, etc. 
 
-## frontend
+## Frontend
 
 The frontend has a nice property that the javascript ecosystem has, unlike the haskell ecosystem, `npm audit` which queries a vulnerability database for everything in the build specification. This is a tool that the Ardana frontend team leverages. 

@@ -13,6 +13,7 @@ src/attacks/pump.md
 src/attacks/vampire.md
 src/attacks/flash.md
 src/attacks/reentrancy.md
+src/attacks/danagoup.md
 src/CHAPTERNAMES/postamble.md
 src/postamble/fv.md
 src/postamble/future.md
