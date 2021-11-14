@@ -3,6 +3,7 @@ src/preamble/preamble.md
 src/CHAPTERNAMES/considerations.md
 src/considerations/code.md
 src/considerations/physical.md
+src/considerations/wallet.md
 src/considerations/datastream.md
 src/considerations/scalartypes.md
 src/considerations/rootfinding.md
