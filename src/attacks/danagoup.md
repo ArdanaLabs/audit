@@ -2,7 +2,7 @@
 
 _This subchapter was cowritten with Bassam Awad_
 
-An attack vector was internally raised and it led to some changes in the management of the protocol. For the current document to discuss it, we will provide some detail about Ardana's **pegging strategy** and consequences of `DANA`'s **deflationary** disposition. 
+An attack vector was internally raised and it led to some changes (\ref{section:diversify}) in the management of the protocol. For the current document to discuss it, we will provide some detail about Ardana's **pegging strategy** and consequences of `DANA`'s **deflationary** disposition. 
 
 \begin{definition}[Pegging strategy]\label{dfn:pegging}
 A mechanism that monitors and somehow "controls" or guides the price of an asset is a \textbf{pegging strategy} when it's intent is to keep the asset's price within a tight $\epsilon$ of some (stable) reference currency. 
@@ -28,7 +28,7 @@ Consider the case when the float consists strictly of a `DANA` balance. Recall t
 
 This scenario is not just a problem for the protocol, but a \nameref{dfn:community} problem because **there's no guarantee that the protocol is liquid enough to fulfill it's obligations**. Thus, this scenario weakens the very notion of what a stablecoin is: an asset who's value is pegged to a reference asset. 
 
-### Mitigation: diversify
+### Mitigation: diversify \label{section:diversify}
 
 Because of the above exploit, Ardana has decided to diversify the float, introducing `ADA` to it. An **administrator** is now required to manually decide what asset the floating strategy operates in from time to time. Additionally, the float will be maintained as a **war chest**, and act as an investment fund during peacetime. Furthermore, debt auctions (see [@ArdanaWhitepaper]) will be allowed to use `ADA` instead of `DANA`. 
 

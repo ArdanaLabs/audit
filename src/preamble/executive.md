@@ -30,6 +30,7 @@ During the audit process research was conducted to rule out the following attack
 
 2. **Flashloans** (modulo \ref{section:flashmitigation})
 
+3. **Trade-based price manipulation**
 
 # Insufficient literature
 
@@ -39,4 +40,4 @@ As of this writing, the jury is still out on the following considerations or att
 
 2. **Cost semantics and gas**: waiting on publications or code from IOHK to determine network fee resolution. 
 
-
+3. **Action-based price manipulation**

@@ -23,7 +23,3 @@ In this chapter we look at broad concepts and decisions and provide context into
 # Attacks
 
 In this chapter we profile threat models, attack vectors, vulnerabilities; mostly on the economic and mechanism design levels, but occasionally on the software implementation level. 
-
-This audit will take on a bit of a code-is-law opinion; many things which are called "attacks" are in fact people using mechanisms as designed. However, it is still the responsibilty of a platform (such as a DeX) to help the community make informed decisions about risk, even when the risk concerns unforeseen behaviors of a protocol or implementation. 
-
-Philosophically, be wary of morally charged language in the overall literature. It often implies that an attack is carried out by a summary enemy of the entire ecosystem, that the ecosystem is victimized, when clearer thinking shows that a small team or platform was the sole victim. 

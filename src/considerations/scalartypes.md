@@ -12,7 +12,7 @@ Addtionally, the `Danaswap` team does not _a priori_ know exactly how big the nu
 
 ## The stablecoin
 
-The stablecoin codebase also uses `PlutusTx.Rational`. 
+The stablecoin codebase also uses `PlutusTx.Rational`, for ultimately similar reasons. 
 
 ## `DanaswapStats` 
 

@@ -38,11 +38,11 @@ Neither ourselves nor [@MlabsSlab] provide a strategy against \nameref{dfn:large
 
 As of this writing, `plutus` depends on the JSON parsing and encoding library [`aeson`](https://hackage.haskell.org/package/aeson). This means that `PAB` artefacts, if the `aeson` version is `< 2.0.1.0`, will be subject to the known DoS vulnerability described in [@AesonDos]. 
 
-### Recomendation
+### Recommendation
 
 Build system should enforce `aeson >= 2.0.1.0`.
 
 ## Conclusion
 
-\nameref{dfn:dos} vectors are currently a part of Cardano. With respect to these vectors, we do not believe Danaswap nor anything in the Ardana ecosystem is better or worse off (\ref{blf:nouniquedos}). 
+\nameref{dfn:dos} vectors are currently a part of Cardano. With respect to these vectors, we do not believe Danaswap nor anything in the Ardana ecosystem is better or worse off (\ref{blf:nouniquedos}). If the build system enforces `aeson >= 2.0.1.0`, a known attack is factored out. 
 

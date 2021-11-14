@@ -12,4 +12,4 @@ Plutus does not afford the freedom to write reentrant contracts.
 
 We can make a blanket statement that smart contracts in Cardano are invulnerable by construction to reentrancy. This is true because no transaction can be validated by (and it follows can require validation from) two different contracts. If you imagine Alice writes contract $A$ and invokes it (executing the program $\texttt{Alice}_A$) to validate transaction $T$, then Bob invokes $A$ ($\texttt{Bob}_A$) before Alice's invocation terminates, $T$ will be validated by **at most** one of $\texttt{Alice}_A$, $\texttt{Bob}_A$. 
 
-As such, reentrancy attacks are not a threat to Danaswap, Ardana stablecoins, or any mechanism relating to Dana governance tokens. 
+As such, reentrancy attacks are not a threat to `Danaswap`, Ardana stablecoins, or any mechanism relating to the `DANA` governance token. 

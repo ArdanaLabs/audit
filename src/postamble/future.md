@@ -1,6 +1,6 @@
 # Future work \label{section:future}
 
-Research opportunities that were out of scope for the current document
+Numerous research opportunities are out of scope for the current document.
 
 ## What is the general **delta in incentives** off ethereum via **no-multistep-atomic-transactions**?
 
@@ -26,6 +26,6 @@ We take the limit case of an idealized `Danaswap` which has arbitrary facility t
 
 In \ref{section:pump} we considered trade-based manipulation and briefly mentioned centralization's opening to information-based manipulation, but [@Manipulation] also defines action-based manipulation. As Ardana is one component in a chaotic system consisting of many different kinds of agents and assets both onchain and offchain, there is _some_ degree to which action-based (like when you short-sell your own stock, close down your physical capital centers, cover your short position, then reopen the physical capital centers) manipulation could play a role. 
 
-## Understand \ref{section:danagoupanalysis} better to come up with a _minimal_ intervention
+## Understand \ref{section:diversify} better to come up with a _minimal_ intervention
 
 Ardana's intervention to mitigate the problem of a whale sitting on `DANA` is a little heavy handed. While it is in scope for the post-launch evolution of the platform to work on decentralizing the mitigation is installed at launch, it also may warrant application of research pressure to come up with different solutions. 

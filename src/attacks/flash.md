@@ -11,7 +11,7 @@ Ethereum offers flash loans because they have **multi-step atomic transactions**
 Flashloans will not be entering the Cardano ecosystem. 
 \end{belief}
 
-As such, Danaswap, Ardana stablecoins, and mechanisms related to Dana governance tokens are not vulnerable to flashloan attacks. 
+As such, 'Danaswap', Ardana stablecoins, and mechanisms related to `DANA` governance tokens are not vulnerable to flashloan attacks. 
 
 ## Action: monitoring Cardano for developments in multistep atomic transactions \label{section:flashmitigation}
 Project Ardana will be monitoring the evolution of Cardano, because we believe that if multistep atomic transactions are introduced flashloans will be shortly around the corner.
