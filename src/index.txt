@@ -1,4 +1,6 @@
+src/CHAPTERNAMES/executive.md
 src/preamble/executive.md
+src/CHAPTERNAMES/preamble.md
 src/preamble/preamble.md
 src/CHAPTERNAMES/considerations.md
 src/considerations/code.md

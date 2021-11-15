@@ -1,7 +1,7 @@
 # Price manipulation \label{section:pump}
 
 \begin{definition}[Truthfulness of a protocol's beliefs]\label{dfn:truebeliefs}
-A protocol $\Pi$ beliefs are \textbf{true} when it's prices are accurate.
+A protocol $\Pi$'s beliefs are \textbf{true} when its prices are accurate.
 \end{definition}
 
 \begin{definition}[Ideal exchange protocol]\label{dfn:idealprotocol}

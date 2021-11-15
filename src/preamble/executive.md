@@ -1,5 +1,3 @@
-\chapter{Executive summary}
-
 Platonic.Systems has conducted an internal \nameref{dfn:audit} parallel to the engineering efforts building `Danaswap`, Ardana stablecoins, and `DANA` governance token mechanisms. 
 
 # Recommendations
@@ -40,4 +38,4 @@ As of this writing, the jury is still out on the following considerations or att
 
 2. **Cost semantics and gas**: waiting on publications or code from IOHK to determine network fee resolution. 
 
-3. **Action-based price manipulation**
+3. **Action-based price manipulation**: data that will be available post launch about Ardana utilization could inform research on this. 

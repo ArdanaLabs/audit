@@ -1,5 +1,3 @@
-\chapter{Preamble}
-
 The audit is a preliminary effort to compensate for the fact that proper formal verification before launch is infeasible. 
 
 An audit means many things. Let's be precise about what we mean by audit in this document.
