@@ -34,7 +34,7 @@ During the audit process research was conducted to rule out the following attack
 
 As of this writing, the jury is still out on the following considerations or attack vectors. Research opportunities are detailed in \ref{section:future}.
 
-1. **Transaction-ordering dependence**: waiting on publications or code from IOHK to determine network fee resolution and their impact on miner incentives. 
+1. **Transaction-ordering dependence**: waiting on publications or code from IOHK to determine network fee resolution and their impact on miner incentives (see \ref{section:frontrunning}).
 
 2. **Cost semantics and gas**: waiting on publications or code from IOHK to determine network fee resolution. 
 

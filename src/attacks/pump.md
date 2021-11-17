@@ -5,7 +5,7 @@ A protocol $\Pi$'s beliefs are \textbf{true} when its prices are accurate.
 \end{definition}
 
 \begin{definition}[Ideal exchange protocol]\label{dfn:idealprotocol}
-An \textbf{ideal} exchange protocol is one who's beliefs are true.
+An \textbf{ideal} exchange protocol is one whose beliefs are true.
 \end{definition}
 
 \begin{definition}[Arbitrage]\label{dfn:arbitrage}

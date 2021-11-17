@@ -29,3 +29,7 @@ In \ref{section:pump} we considered trade-based manipulation and briefly mention
 ## Understand \ref{section:diversify} better to come up with a _minimal_ intervention
 
 Ardana's intervention to mitigate the problem of a whale sitting on `DANA` is a little heavy handed. While it is in scope for the post-launch evolution of the platform to work on decentralizing the mitigation is installed at launch, it also may warrant application of research pressure to come up with different solutions. 
+
+## Compare/contrast across the marketplace of throughput strategies
+
+[@Throughput] seeds a methodology for analyzing throughput strategies, which should be built on as each new product introduces novel solutions. An example approach is for each product to answer the \nameref{section:frontrunning} question separately. 
