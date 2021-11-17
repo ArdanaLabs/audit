@@ -26,7 +26,7 @@ The only way to have a fairness guarantee would be for each pool to update each 
 
 ## Frontrunning \label{section:frontrunning}
 
-Frontrunning describes two different phenomena in the defi literature. In contrast to frontrunning in [the traditional finance literature](https://www.investopedia.com/terms/f/frontrunning.asp), defi frontrunning is not about information and time, rather it is about competition that arises from the unique context of transaction-ordering dependence (that is, uncertainty over the starting state of a transaction implyies uncertainty over the finishing state of a transaction if there are multiple transactions involving some shared store asking to be mined).
+Frontrunning describes two different phenomena in the defi literature. In contrast to frontrunning in [the traditional finance literature](https://www.investopedia.com/terms/f/frontrunning.asp), defi frontrunning is not about information and time, rather it is about competition that arises from the unique context of transaction-ordering dependence (that is, uncertainty over the starting state of a transaction implies uncertainty over the finishing state of a transaction if there are multiple transactions involving some shared store asking to be mined).
 
 As most of the frontrunning literature comes from the Ethereum ecosystem, and as we failed to find a frontrunning literature for Cardano, we do not have rigorous beliefs. We instead have a future research opportunity that would begin with explaining whether or not frontrunning vectors observed in Ethereum are likely or possible to be observed on Cardano. 
 

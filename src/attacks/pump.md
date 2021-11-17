@@ -40,7 +40,7 @@ There are two intuition pumps you can use to sympathize with this argument.
 
 1. There is a sort of _conservation law_ point of view, the statement $I(x) = 0$ from [@DanaswapWhitepaper] can be interpreted as saying "balances of assets are conserved" across the exchange. 
 
-2. We observe an absence of prince manipulation scandals in Curve, the exchange based on [@StableSwapWhitepaper]. 
+2. We observe an absence of price manipulation scandals in Curve, the exchange based on [@StableSwapWhitepaper]. 
 
 ### Incentive alignment
 
