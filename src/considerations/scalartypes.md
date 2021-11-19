@@ -4,7 +4,7 @@
 
 The Ardana team uses [`PlutusTx.Rational`](https://github.com/input-output-hk/plutus/blob/master/plutus-tx/src/PlutusTx/Ratio.hs) to represent numbers in the `Danaswap` contract. As of this writing, tolerance (number of decimals needed to evaluate equality) is set to `20`. 
 
-\begin{belief}[FLOPs incompatible with `Danaswap` requirements]\label{blf:noflop}
+\begin{belief}[FLOPs incompatible with \texttt{Danaswap} requirements]\label{blf:noflop}
 The `Danaswap` smart contract requires 1. extreme precision, 2. very large numbers, and 3. exact reproduction across varying hardware. Floating point operations (FLOPs) are incompatible with the requirements. 
 \end{belief}
 
