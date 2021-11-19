@@ -1,1 +1,1 @@
-\chapter{Postamble}
+\part{Postamble}

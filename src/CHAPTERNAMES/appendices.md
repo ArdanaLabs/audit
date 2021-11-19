@@ -1,1 +1,1 @@
-\chapter{Appendices}
+\part{Appendices}

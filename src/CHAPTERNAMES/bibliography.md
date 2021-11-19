@@ -1,1 +1,1 @@
-\chapter{Bibliography}
+\part{Bibliography}
