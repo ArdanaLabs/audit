@@ -1,6 +1,6 @@
-The audit is a preliminary effort to provide the Cardano community a thorough technical review of Ardana's Danaswap DApp in a situation where formal verification before launch is infeasible. 
+The audit is a preliminary effort to provide the Cardano community with a thorough technical review of Ardana's Danaswap DApp in a situation where formal verification before launch is infeasible. 
 
-An audit means many things. Let's be precise about what we mean by audit in this document.
+An audit means many things. Let's be precise about what we mean by "audit" in this document.
 
 \begin{definition}[Audit]\label{dfn:audit}
 An audit is a document provided to the community to guide them in taking an informed risk.
