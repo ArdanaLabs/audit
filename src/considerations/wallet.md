@@ -12,7 +12,7 @@ Yoroi claims to have been rigorously audited.
 
 > Yoroi is a light wallet for Cardano. It’s simple, fast and secure. Yoroi is an Emurgo product, engineered by IOHK. It follows best practices for software in the industry, including a comprehensive security audit. 
 
-However, it seems artifacts (such as reports) from this audit are private, as of this writing. 
+However, it seems artifacts (such as reports) from their audit are private, as of this writing. 
 
 ## General security in working with browser extensions 
 
