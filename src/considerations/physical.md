@@ -2,7 +2,7 @@
 
 A dapp consists of on-chain and off-chain components. An ecosystem like Cardano's confidence in the security properties, by construction or otherwise, of its underlying decentralized technology (sometimes called "layer one") is fundamental, so we do not discuss it here. On that, we can point to [entrypoint literature for the unfamiliar](https://why.cardano.org/en/introduction/) and for the advanced reader [@Ouroboros].
 
-Dapp developers are responsible for securing off-chain dapp components. Ardana's CTO composed a treatment of the team's security considerations in [@SecuringArdanaSwap]. In what follows, we assume the reader has a minimal understanding of the [Plutus Application Backend (PAB)](https://github.com/input-output-hk/Alonzo-testnet/blob/main/explainers/PAB-explainer.md)
+Dapp developers are responsible for securing off-chain dapp components. Ardana's CTO composed a treatment of the team's security considerations in [@SecuringArdanaSwap]. In what follows, we assume the reader has a minimal understanding of the [Plutus Application Backend (PAB)](https://github.com/input-output-hk/Alonzo-testnet/blob/main/explainers/PAB-explainer.md).
 
 The highlights are simple: 
 
