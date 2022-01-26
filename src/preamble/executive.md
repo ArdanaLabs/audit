@@ -18,7 +18,7 @@ With mitigation strategy sketches provided in \ref{section:flashmitigation}. Con
 
 ## Enforce `aeson >= 2.0.1.0` at build time.
 
-\ref{section:pabdos}. Confidence in importance: very high. 
+\ref{section:pabdos}. Confidence in importance: very high. [](https://github.com/ArdanaLabs/DanaSwap/issues/233). 
 
 # Nonissues
 
